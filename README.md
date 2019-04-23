@@ -5,9 +5,9 @@
 BOM coming soon
 
 ## Install instructions
-These install instructions have been tested and are provided for information purpose only.
-- [Installing Norns](install/Install_instructions.md)
 
+- [Installing Norns](https://github.com/okyeron/fates/install/Norns_install_instructions.md)
+- Installing Orac
 
 ## UART
 
