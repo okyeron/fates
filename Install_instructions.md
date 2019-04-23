@@ -32,7 +32,7 @@ Move the **wpa-supplicant.conf** file you've created to the root of the SD card 
 
 ### Mount the SD card and boot the Raspberry Pi
 
-Find the IP of your Raspberry Pi using a software like Lanscan and
+Find the IP of your Raspberry Pi using a software like [Lanscan](https://itunes.apple.com/us/app/lanscan/id472226235) (on MacoS) and then 
    generate a key (replace XX with the IP of the RPI).  
 Open a terminal and enter the following command (XX is the last two digits of the PI's IP).  
 `ssh-keygen -R 192.168.1.XX`
