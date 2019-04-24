@@ -59,7 +59,7 @@ Enter the following commands in a terminal, edit if needed (country etc).
 `groupmod --new-name we pi`  
 `exit`  
 `ssh we@norns.local`  
-`sudo passwd -l root` ***(sleep)***
+`sudo passwd -l root` ***(sleep)*** 
 `sudo nano /etc/sudoers.d/010_pi-nopasswd` ***(change pi to we)***  
 `sudo reboot`
 
