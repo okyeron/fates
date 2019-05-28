@@ -1,9 +1,9 @@
 /*
 Device Tree overlay for SSD1322 SPI controller.
 
-Default pins (FATES v1.3):
-DC#		 = GPIO17
-RESET# = GPIO4
+Default pins (FATES 1.2):
+DC#		 = GPIO14
+RESET# = GPIO15
 
 */
 
@@ -38,7 +38,7 @@ RESET# = GPIO4
     target = <&gpio>;
     __overlay__ {
       ssd1322_pins: ssd1322_pins {
-        brcm,pins = <4 17>;
+        brcm,pins = <15 14>;
         brcm,function = <1 1>;
       };
     };
@@ -62,8 +62,8 @@ RESET# = GPIO4
         bgr = <0>;
         fps = <20>;
 
-        reset-gpios = <&gpio 4 0>;
-        dc-gpios = <&gpio 17 1>;
+        reset-gpios = <&gpio 15 0>;
+        dc-gpios = <&gpio 14 1>;
         debug = <3>;
       };
     };

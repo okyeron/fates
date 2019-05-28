@@ -78,7 +78,7 @@
         target-path = "/soc/gpio";
         __overlay__ {
             knob_pins3: knob_pins3 {
-                brcm,pins = <27 22>;
+                brcm,pins = <26 16>;
                 brcm,function = <0>;
                 brcm,pull = <2>;
             };
@@ -94,7 +94,7 @@
                 #size-cells = <0>;
                 pinctrl-names = "default";
                 pinctrl-0 = <&knob_pins3>;
-                gpios = <&gpio 27 1>, <&gpio 22 1>;
+                gpios = <&gpio 26 1>, <&gpio 16 1>;
                 linux,axis = <0>; /* REL_X */
                 rotary-encoder,relative-axis;
 		            rotary-encoder,half-period;

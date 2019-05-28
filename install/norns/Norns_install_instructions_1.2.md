@@ -80,7 +80,7 @@ Reminder: the password is ***sleep***
 ### Testing the ssd1322
 Now we're going to test the display. If your soldering is fine and if the kernel has been built correctly, you should see the console displayed on the OLED screen but first we need to do this :
 
-    sudo modprobe fbtft_device custom name=fb_ssd1322 width=128 height=64 speed=16000000 gpios=reset:4,dc:17
+    sudo modprobe fbtft_device custom name=fb_ssd1322 width=128 height=64 speed=16000000 gpios=reset:14,dc:15
     con2fbmap 1 1
 
 ## Norns
@@ -88,7 +88,7 @@ Now we're going to test the display. If your soldering is fine and if the kernel
 
 You will be disconnected and the device will reboot. Reconnect in a new window.  
 
-    cd /home/we/fates/install/norns/scripts &&./fates_install_1.3.sh
+    cd /home/we/fates/install/norns/scripts &&./fates_install_1.2.sh
 Answer ***yes (y)*** to "enable realtime priority"
 
 ## Wifi network  
