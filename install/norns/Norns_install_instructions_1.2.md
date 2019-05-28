@@ -1,13 +1,13 @@
 
 # Installing Norns on Fates
-***Fates v1.3 pcb only.***
+***Fates v1.2 pcb only.***
 
 ## Preparing the Raspberry PI
 
 ### Download raspbian stretch lite
 https://www.raspberrypi.org/downloads/raspbian/  
 
-### Flash raspbian lite to the sdcard
+### Flash raspbian lite to the sd card (from your computer)
 Use balenaEtcher - https://www.balena.io/etcher/ for this.
 
 ### SSH configuration
@@ -24,7 +24,7 @@ Use balenaEtcher - https://www.balena.io/etcher/ for this.
       key_mgmt=WPA-PSK
     }
 
-Open a terminal and type paste the following commands, one line at a time:
+Open a terminal and type paste the following commands, one line at a time (on MacOS) :
 
     cd /Volumes && ls
     cd boot && touch ssh
