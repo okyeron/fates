@@ -1,0 +1,79 @@
+/*
+Device Tree overlay for SSD1322 SPI controller.
+
+Default pins (FATES v1.3):
+DC#		 = GPIO17
+RESET# = GPIO4
+
+*/
+
+/dts-v1/;
+/plugin/;
+
+/ {
+  compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+
+  fragment@0 {
+    target = <&spi0>;
+    __overlay__ {
+      status = "okay";
+    };
+  };
+
+  fragment@1 {
+    target = <&spidev0>;
+    __overlay__ {
+      status = "disabled";
+    };
+  };
+
+  fragment@2 {
+    target = <&spidev1>;
+    __overlay__ {
+      status = "disabled";
+    };
+  };
+
+  fragment@3 {
+    target = <&gpio>;
+    __overlay__ {
+      ssd1322_pins: ssd1322_pins {
+        brcm,pins = <4 17>;
+        brcm,function = <1 1>;
+      };
+    };
+  };
+
+  fragment@4 {
+    target = <&spi0>;
+    __overlay__ {
+      #address-cells = <1>;
+      #size-cells = <0>;
+
+      ssd1322: ssd1322@0 {
+        compatible = "solomon,ssd1322";
+        reg = <0>;
+        pinctrl-names = "default";
+        pinctrl-0 = <&ssd1322_pins>;
+
+        spi-max-frequency = <16000000>;
+        buswidth = <8>;
+        rotate = <0>;
+        bgr = <0>;
+        fps = <20>;
+
+        reset-gpios = <&gpio 4 0>;
+        dc-gpios = <&gpio 17 1>;
+        debug = <3>;
+      };
+    };
+  };
+
+  __overrides__ {
+    speed			= <&ssd1322>,"spi-max-frequency:0";
+    rotate		= <&ssd1322>,"rotate:0";
+    bgr				= <&ssd1322>,"bgr:0";
+    fps				= <&ssd1322>,"fps:0";
+    debug			= <&ssd1322>,"debug:0";
+  };
+};

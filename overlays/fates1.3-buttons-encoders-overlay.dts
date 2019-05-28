@@ -1,0 +1,134 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+
+    fragment@0 {
+        target-path = "/soc/gpio";
+        __overlay__ {
+            knob_pins1: knob_pins1 {
+                brcm,pins = <5 6>;
+                brcm,function = <0>;
+                brcm,pull = <2>;
+            };
+        };
+    };
+
+    fragment@1 {
+        target-path = "/soc";
+        __overlay__ {
+            knob1: knob1 {
+                compatible = "rotary-encoder";
+                #address-cells = <1>;
+                #size-cells = <0>;
+                pinctrl-names = "default";
+                pinctrl-0 = <&knob_pins1>;
+                gpios = <&gpio 5 1>, <&gpio 6 1>;
+                linux,axis = <0>; /* REL_X */
+                rotary-encoder,relative-axis;
+		            rotary-encoder,half-period;
+            };
+        };
+    };
+    //__overrides__ {
+        //relative_axis =  <&knob>,"rotary-encoder,relative-axis";
+        //linux_axis =  <&knob>,"linux,axis";
+        //rollover =  <&knob>,"rotary-encoder,rollover";
+        //half-period =  <&knob>,"rotary-encoder,half-period";
+        //steps =  <&knob>,"rotary-encoder,steps";
+    //};
+
+    fragment@2 {
+        target-path = "/soc/gpio";
+        __overlay__ {
+            knob_pins2: knob_pins2 {
+                brcm,pins = <13 12>;
+                brcm,function = <0>;
+                brcm,pull = <2>;
+            };
+        };
+    };
+
+    fragment@3 {
+        target-path = "/soc";
+        __overlay__ {
+            knob2: knob2 {
+                compatible = "rotary-encoder";
+                #address-cells = <1>;
+                #size-cells = <0>;
+                pinctrl-names = "default";
+                pinctrl-0 = <&knob_pins2>;
+                gpios = <&gpio 13 1>, <&gpio 12 1>;
+                linux,axis = <0>; /* REL_X */
+                rotary-encoder,relative-axis;
+		rotary-encoder,half-period;
+            };
+        };
+    };
+    //__overrides__ {
+        //relative_axis =  <&knob>,"rotary-encoder,relative-axis";
+        //linux_axis =  <&knob>,"linux,axis";
+        //rollover =  <&knob>,"rotary-encoder,rollover";
+        //half-period =  <&knob>,"rotary-encoder,half-period";
+        //steps =  <&knob>,"rotary-encoder,steps";
+    //};
+
+    fragment@4 {
+        target-path = "/soc/gpio";
+        __overlay__ {
+            knob_pins3: knob_pins3 {
+                brcm,pins = <27 22>;
+                brcm,function = <0>;
+                brcm,pull = <2>;
+            };
+        };
+    };
+
+    fragment@5 {
+        target-path = "/soc";
+        __overlay__ {
+            knob0: knob3 {
+                compatible = "rotary-encoder";
+                #address-cells = <1>;
+                #size-cells = <0>;
+                pinctrl-names = "default";
+                pinctrl-0 = <&knob_pins3>;
+                gpios = <&gpio 27 1>, <&gpio 22 1>;
+                linux,axis = <0>; /* REL_X */
+                rotary-encoder,relative-axis;
+		            rotary-encoder,half-period;
+            };
+        };
+    };
+    //__overrides__ {
+        //relative_axis =  <&knob>,"rotary-encoder,relative-axis";
+        //linux_axis =  <&knob>,"linux,axis";
+        //rollover =  <&knob>,"rotary-encoder,rollover";
+        //half-period =  <&knob>,"rotary-encoder,half-period";
+        //steps =  <&knob>,"rotary-encoder,steps";
+    //};
+
+    fragment@6 {
+       target-path = "/";
+       __overlay__ {
+          keypad: keys {
+             compatible = "gpio-keys";
+             #address-cells = <1>;
+             #size-cells = <0>;
+             button@24 {
+                linux,code = <1>;
+                gpios = <&gpio 24 1>;
+             };
+             button@25 {
+                linux,code = <2>;
+                gpios = <&gpio 25 1>;
+             };
+             button@23 {
+                linux,code = <3>;
+                gpios = <&gpio 23 1>;
+             };
+          };
+       };
+    };
+};
