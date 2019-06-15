@@ -84,11 +84,13 @@ Reminder: the password is ***sleep***
     cd /home/we/fates/install/norns/scripts && ./fates_prepare.sh
 
 
-### Testing the ssd1322
+### Testing the ssd1322 OLED
 Now we're going to test the display. If your soldering is fine and if the kernel has been built correctly, you should see the console displayed on the OLED screen but first we need to do this :
 
     sudo modprobe fbtft_device custom name=fb_ssd1322 width=128 height=64 speed=16000000 gpios=reset:4,dc:17
     con2fbmap 1 1
+    
+Note - The OLED will continue to display whatever is on it until you reboot again.
 
 ## Norns
     cd /home/we/fates/install/norns/scripts &&./fates_packages.sh
