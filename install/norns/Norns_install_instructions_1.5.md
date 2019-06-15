@@ -1,6 +1,6 @@
 
 # Installing Norns on Fates
-***Fates v1.4 pcb only.***
+***Only for Fates v1.5 pcb or later***
 
 ## Preparing the Raspberry PI
 
