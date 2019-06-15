@@ -10,6 +10,8 @@ https://www.raspberrypi.org/downloads/raspbian/
 ### Flash raspbian lite to the sdcard
 Use balenaEtcher - https://www.balena.io/etcher/ for this.
 
+When etcher is finished it will unmount your SD card. Remove the SD card and re-insert/mount it in your computer for the next steps.
+
 ### SSH configuration
 
  Create a **wpa-supplicant.conf** file for your network and copy the file to the root of the ***boot*** volume
@@ -33,15 +35,20 @@ Move the **wpa-supplicant.conf** file you've created to the root of the SD card 
 
 ### Put the SD card in the Raspberry Pi and boot
 
-Find the IP of your Raspberry Pi using a software like [Lanscan](https://itunes.apple.com/us/app/lanscan/id472226235) (on MacoS) and then 
-   generate a key (replace XX with the IP of the RPI).  
+Find the IP of your Raspberry Pi using a software like [Lanscan](https://itunes.apple.com/us/app/lanscan/id472226235) (on MacoS)
+   
+Or if you have a keyboard and HDMI monitor plugged into the pi, login and use `ifconfig` to get your IP address (you want the one for `wlan0`).
+
+Then you can generate an SSH key (replace XX below with the IP of the RPI).  
 Open a terminal and enter the following command (XX is the last two digits of the PI's IP).  
 `ssh-keygen -R 192.168.1.XX`
 
-Connect via SSH. `ssh pi@192.168.1.XX` The password is ***raspberry***
+Connect via SSH. `ssh pi@192.168.1.XX` The default password is ***raspberry***
 
 ### RPI adjustments
 Enter the following commands in a terminal, edit if needed (country etc).
+
+Note - a fair bit of this setup is to get the pi to behave exactly like a hardward norns unit (default username/password, etc.)
 
 `sudo raspi-config nonint do_hostname norns`  
 `sudo raspi-config nonint do_spi 0`  
@@ -86,24 +93,24 @@ Now we're going to test the display. If your soldering is fine and if the kernel
 ## Norns
     cd /home/we/fates/install/norns/scripts &&./fates_packages.sh
 
-You will be disconnected and the device will reboot. Reconnect in a new window.  
+You will be disconnected and the device will reboot. When the pi has rebooted, reconnect via SSH.
 
     cd /home/we/fates/install/norns/scripts &&./fates_install.sh
 Answer ***yes (y)*** to "enable realtime priority"
 
 ## Wifi network  
-*Do this manually, too risky to put it in the script.*
 
     ssh we@norns.local
     sudo apt install network-manager
     sudo cp /home/we/fates/install/norns/files/interfaces /etc/network/interfaces
     sudo mv /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant_bak.conf
+    sudo reboot
+ 
+After reboot, on the Raspberry pi, using the OLED screen navigate to SYSTEM > WIFI and add your network manually.
 
-And reboot (with command line if possible).  
-On the Raspberry pi, navigate to System -> Wifi and add your network manually.
+This is a bit of a hassle to do manually, but you only have to do it once and it should ensure your WIFI works properly from here on out.
 
-## Audio configuration
-*(this part needs to be tested once again)*
+## Audio configuration for 
 
     ssh we@norns.local
     amixer controls
@@ -112,7 +119,8 @@ On the Raspberry pi, navigate to System -> Wifi and add your network manually.
     sudo alsactl store  
     amixer cset numid=3 0%
 
-    sudo reboot
+    sudo alsactl store
 
 
-*N.B: These install instructions are based on the work of Tehn, Nordseele, The Technobear among others. Thank you!*
+
+*These install instructions are based on the work of Tehn, Nordseele, The Technobear among others. Thank you!*
