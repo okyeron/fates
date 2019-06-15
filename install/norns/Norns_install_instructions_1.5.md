@@ -94,6 +94,14 @@ Now we're going to test the OLED display. If your soldering is fine and if the k
     sudo modprobe fbtft_device custom name=fb_ssd1322 width=128 height=64 speed=16000000 gpios=reset:4,dc:17
     con2fbmap 1 1
     
+You can also use `lsmod` to check if the `fbtft_device` has loaded properly. Which should look something like:
+
+	fb_ssd1322             16384  0
+	fbtft_device           49152  0
+	fbtft                  45056  2 fbtft_device,fb_ssd1322
+
+`con2fbmap 1 0` will map the console back to HDMI (fb0) if you need that.
+    
 Note - The OLED will continue to display whatever is on it until you reboot again.
 
 ## Norns
