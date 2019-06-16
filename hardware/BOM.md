@@ -16,7 +16,7 @@ Raspberry Pi 3B+ can be purchased from a number of sources such as [Adafruit](ht
 ||4|R6 R18 R32 R33|47K|0805|
 ||2|C13 C14|18p|0805|
 ||2|C8 C17|220p|0805|
-||7|C1 C6 C11 C22 C23 C25 C27|100n|C0805|
+||7|C1 C6 C11 C22 C23 C25 C27|100n|0805|
 |710-860020672005|4|C9 C7 C4 C12|1uF Electrolytic|11mm|
 |667-ECE-A1VKS100|3|C2 C3 C10|10uF Electrolytic|11mm|
 |667-ECA-0JM221B|2|C15 C16|220uF Electrolytic|11mm|

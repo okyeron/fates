@@ -6,7 +6,7 @@ Fates is a pcb add-on board for Raspberry PI 3 Model B+ that provides a stereo a
 
 ## Build and BOM
 
-[BOM](BOM.md)
+[BOM](hardware/BOM.md)
 
 
 ## Install instructions
