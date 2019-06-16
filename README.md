@@ -27,15 +27,14 @@ BOM coming soon
 |652-PEC11R-4015F-N24|3|ENC1 ENC2 ENC3|ENC_BOURNS_PEC11|PEC11||
 |NHD-2.7-12864WDW3|1|SSD1322|NHD-2.7-12864WDW3|||
 |806-STX-3100-3CB|1|STX3100-5CB|STEREOJACK|STX3100||
-||4|Z5 Z6 Z7 Z8|PJ302M2|PJ302M||https://modularaddict.com/pj302m-jacks https://www.thonk.co.uk/shop/3-5mm-jacks/
-|490-MJ-3536|0||CUI MJ-3536 as alternate?|||
+||4|Z5 Z6 Z7 Z8|PJ302M2|PJ302M||
+|490-MJ-3536|0||alternate jack - CUI MJ-3536|||
 |517-929984-01-20-RK|1||1x20 low profile female header for display|||
 |485-2222|1||2x20 GPIO female header for Raspberry pi||Adafruit Part # 2222|
 ||1|PCB1|RPI3 b+|RPI3|Device for Raspberry Pi 3 board |
-|611-D6R90LFS|3|S1|S2|S3|DT6 Switch Black|DT6|ITT SWITCH|
-|5GSH920Q|3|S1|S2|S3|5G MEC switch - Quiet|||
-||0|I2C|FEMALE 2x3 header|2X3|Multi connection point.|
+|5GSH920Q|3|S1 S2 S3|5G MEC switch - Quiet|||
 ||0|I2C-V|1X4 header|1X04-BIG|4-pin connector|
+
 ## Install instructions
 
 - [Installing Norns on fates 1.2](https://github.com/okyeron/fates/blob/master/install/norns/Norns_install_instructions_1.2.md)
