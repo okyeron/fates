@@ -33,13 +33,12 @@ BOM coming soon
 |855-M20-9994045|1||1x20 male pin header for disp||
 |485-2222|1||2x20 GPIO female header for RasPi|Adafruit Part # 2222|
 |649-10027011-106HLF|1||UART pin header||
+|538-47642-0001|1||USB Micro jack||
 ||1|PCB1|RPI3 b+||
 |5GSH920Q|3|S1 S2 S3|5G MEC switch - Quiet||
 |5GSH920|0| ALT |5G MEC switch - Clicky||
 |642-1US09|3| |5G MEC switch caps black||
 |642-1US03|0| ALT |5G MEC switch caps gray||
-
-|538-47642-0001|1||USB Micro jack||
 
 
 
