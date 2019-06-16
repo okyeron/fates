@@ -33,9 +33,9 @@ Raspberry Pi 3B+ can be purchased from a number of sources such as [Adafruit](ht
 |485-2222|1||2x20 GPIO female header for RasPi|Adafruit Part # 2222|
 |649-10027011-106HLF|1||UART pin header||
 |538-47642-0001|1||USB Micro jack||
-||1|PCB1|RPI3 b+||
 |5GSH920Q|3|S1 S2 S3|5G MEC switch - Quiet||
 |5GSH920|0| ALT |5G MEC switch - Clicky||
 |642-1US09|3| |5G MEC switch caps black||
 |642-1US03|0| ALT |5G MEC switch caps gray||
+||1| |RPI3 b+||
 
