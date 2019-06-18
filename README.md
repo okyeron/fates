@@ -1,6 +1,8 @@
 # Fates DAC board for raspberry pi
 
-Fates is a pcb add-on board for Raspberry PI 3 Model B+ that provides a stereo audio codec with headphone driver, 3 encoders, 3 buttons, and a grayscale display. It’s fully compatible with [monome norns](<https://github.com/monome/norns>) software. A “DIY norns” if you like.
+Fates is a pcb add-on board for Raspberry Pi 3 Model B+ that provides a stereo audio codec with headphone driver, 3 encoders, 3 buttons, and a ssd1322 grayscale display. It’s fully compatible with [monome norns](<https://github.com/monome/norns>) software. A “DIY norns” if you like. 
+
+Fates can also be used for other Raspberry Pi audio projects including PatchboxOS, Orac, etc.
 
 ![<fates pcb top>](<hardware/fates1.5-top.png>)
 
