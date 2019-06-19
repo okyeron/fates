@@ -11,21 +11,23 @@ Raspberry Pi 3B+ can be purchased from a number of sources such as [Adafruit](ht
 |-----|:--:|-----|-----|-----|
 ||3|R1 R2 R3|10k|0805|
 ||2|R5 R16|100R|0805|
-||2|R7 R8|2.2K|0805|
+||4|R9 R10 R11 R12|220R|0805|
+|603-RC0805FR-072K2L|2|R7 R8|2.2K|0805|
 ||4|R4 R20 R22 R26|5.6K|0805|
 ||4|R6 R18 R32 R33|47K|0805|
 ||2|C13 C14|18p|0805|
 ||2|C8 C17|220p|0805|
-||7|C1 C6 C11 C22 C23 C25 C27|100n|0805|
+|80-C0805C104J5RACLR|7|C1 C6 C11 C22 C23 C25 C27|100n|0805|
 |710-860020672005|4|C9 C7 C4 C12|1uF Electrolytic|11mm|
 |667-ECE-A1VKS100|3|C2 C3 C10|10uF Electrolytic|11mm|
 |667-ECA-0JM221B|2|C15 C16|220uF Electrolytic|11mm|
+|833-1N4148W-TP|4|D5 D6 D7 D8|1N4148|SOD-123|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 |ADP150AUJZ-3.3-R7|1|ADP150-3.3|ADP150AUJZ-3.3-R7||
 |238-WM8731SEDS/RV|1|U1|WM8731SEDS/V|SSOP28||
 |815-ABLS2-12.2-D4Y-T|1|Y1|12.288MHz|HC49UP||
 |652-PEC11R-4015F-N24|3|ENC1 ENC2 ENC3|ENC_BOURNS_PEC11||
 |NHD-2.7-12864WDW3|1|SSD1322|NHD-2.7-12864WDW3|
-|806-STX-3100-3CB|1|STX3100-5CB|STEREOJACK|
+|490-SJ1-3523N|1|CUI_SJ1-3523N|STEREOJACK|
 ||4|Z5 Z6 Z7 Z8|PJ302M2|PJ302M|
 |490-MJ-3536|0| ALT |alternate jack - CUI MJ-3536||
 |517-929984-01-20-RK|1||1x20 low profile female header for disp||
