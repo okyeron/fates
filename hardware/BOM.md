@@ -1,6 +1,6 @@
 ## Fates 1.5 BOM
 
-Some alternate parts are listed with a zero quantity. Choose what works best for you.
+Some alternate parts are listed with a zero quantity. This are meant to be alternates. Choose what works best for you.
 
 PJ302M jacks are available from [Thonk](https://www.thonk.co.uk/shop/3-5mm-jacks/ ), [Synthcube](https://synthcube.com/cart/3-5mm-mono-jack-pj302m-rt-angle-hex-nut) and [Modular Addict](https://modularaddict.com/pj302m-jacks) among other sources.
 
