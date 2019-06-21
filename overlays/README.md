@@ -20,8 +20,8 @@
 - E3A : GPIO 27  
   E3B : GPIO 22
 
-- E4A : GPIO 26  - Not Functional Yet
-  E4B : GPIO 16  - Not Functional Yet
+- E4A : GPIO 26  ( Not Functional Yet )
+  E4B : GPIO 16  ( Not Functional Yet )
 
 ## OLED display  (v1.5)
 
