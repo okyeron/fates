@@ -12,16 +12,16 @@
 ## Encoders GPIO  (v1.5)
 
 - E1A : GPIO 5  
-  E1B : GPIO 6  
+- E1B : GPIO 6  
 
 - E2A : GPIO 13  
-  E2B : GPIO 12  
+- E2B : GPIO 12  
 
 - E3A : GPIO 27  
-  E3B : GPIO 22
+- E3B : GPIO 22 
 
-- E4A : GPIO 26  ( Not Functional Yet )
-  E4B : GPIO 16  ( Not Functional Yet )
+- E4A : GPIO 26  ( Not Functional Yet ) 
+- E4B : GPIO 16  ( Not Functional Yet )
 
 ## OLED display  (v1.5)
 
