@@ -1,7 +1,7 @@
 /*
 Device Tree overlay for SSD1322 SPI controller.
 
-Default pins (FATES v1.4):
+Default pins (FATES v1.5):
 DC#		 = GPIO17
 RESET# = GPIO4
 
