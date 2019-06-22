@@ -108,16 +108,24 @@ Note - The OLED will continue to display whatever is on it until you reboot agai
 ## Norns
     cd /home/we/fates/install/norns/scripts &&./fates_packages.sh
 
+Answer ***yes (y)*** to "enable realtime priority"
+
 You will be disconnected and the device will reboot. When the pi has rebooted, reconnect via SSH.
 
     cd /home/we/fates/install/norns/scripts &&./fates_install.sh
-Answer ***yes (y)*** to "enable realtime priority"
 
 ## Wifi network  
 
+    cd /home/we/fates/install/norns/scripts &&./fates_networkmanager.sh
+	
+OLD
     ssh we@norns.local
     sudo apt install network-manager
     sudo cp /home/we/fates/install/norns/files/interfaces /etc/network/interfaces
+    sudo cp /home/we/norns-image/config/network-manager/100-disable-wifi-mac-randomization.conf /etc/NetworkManager/conf.d/
+    sudo cp /home/we/norns-image/config/network-manager/101-logging.conf /etc/NetworkManager/conf.d/
+    sudo cp /home/we/norns-image/config/network-manager/200-disable-nmcli-auth.conf /etc/NetworkManager/conf.d/
+    sudo systemctl disable pppd-dns.service
     sudo mv /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant_bak.conf
     sudo reboot
  
