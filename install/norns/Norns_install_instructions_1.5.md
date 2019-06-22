@@ -52,9 +52,12 @@ Enter the following commands in a terminal, edit if needed (country etc).
 Note - a fair bit of this setup is to get the pi to behave exactly like a hardward norns unit (default username/password, etc.)
 
 `sudo raspi-config nonint do_spi 0`  
+`sudo raspi-config nonint do_i2c 0`  
 `sudo raspi-config nonint do_expand_rootfs`  
 `sudo raspi-config nonint do_hostname norns`  
-`sudo raspi-config` (change wifi country in the "Localization" menu, this is crucial)  
+`sudo raspi-config` 
+    (change locale, timezone, and wifi country in the "Localization" menu)  
+    (change password here as well to  ***(sleep)***  )
 `sudo su`  
 `passwd pi` ***(sleep)***  
 `sudo reboot`  
