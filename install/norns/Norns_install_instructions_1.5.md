@@ -81,7 +81,7 @@ Note - a fair bit of this setup is to get the pi to behave exactly like a hardwa
 
 ### Run updates install git, build dependencies, and compile the linux kernel
 
-This builds the Raspberry Pi kernel so expect this to take an hour or more on an RPI 3B+.
+This builds the Raspberry Pi kernel so expect this to take an 90 minutes or more on an RPI 3B+.
 
 Reminder: the password is now ***sleep***  
 
