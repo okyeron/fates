@@ -39,6 +39,7 @@ Find the IP of your Raspberry Pi using a software like [Lanscan](https://itunes.
    
 Or if you have a keyboard and HDMI monitor plugged into the pi, login and use `ifconfig` to get your IP address (you want the one for `wlan0`).
 
+(Optional)
 Then you can generate an SSH key (replace XX below with the IP of the RPI).  
 Open a terminal and enter the following command (XX is the last two digits of the PI's IP).  
 `ssh-keygen -R 192.168.1.XX`
@@ -50,16 +51,16 @@ Enter the following commands in a terminal, edit if needed (country etc).
 
 Note - a fair bit of this setup is to get the pi to behave exactly like a hardward norns unit (default username/password, etc.)
 
-`sudo raspi-config nonint do_hostname norns`  
 `sudo raspi-config nonint do_spi 0`  
 `sudo raspi-config nonint do_expand_rootfs`  
+`sudo raspi-config nonint do_hostname norns`  
 `sudo raspi-config` (change wifi country in the "Localization" menu, this is crucial)  
 `sudo su`  
 `passwd pi` ***(sleep)***  
 `sudo reboot`  
-`ssh keygen -R norns.local`  
+`ssh keygen -R norns.local`  (Optional)
 `sudo passwd root` ***(sleep)***  
-`sudo nano /etc/ssh/sshd_config` ***("PermitRootLogin" needs to be set to "yes" and uncomment the line)***  
+`sudo nano /etc/ssh/sshd_config` ***(uncomment the line for "PermitRootLogin" and change "prohibit-password" to "yes")***  
 `sudo reboot`  
 `ssh root@norns.local`  
 `usermod -l we -d /home/we -m pi`   
