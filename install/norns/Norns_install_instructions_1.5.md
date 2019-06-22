@@ -119,6 +119,7 @@ You will be disconnected and the device will reboot. When the pi has rebooted, r
     cd /home/we/fates/install/norns/scripts &&./fates_networkmanager.sh
 	
 OLD
+
     ssh we@norns.local
     sudo apt install network-manager
     sudo cp /home/we/fates/install/norns/files/interfaces /etc/network/interfaces
