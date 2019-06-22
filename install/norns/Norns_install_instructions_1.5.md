@@ -67,7 +67,7 @@ Note - a fair bit of this setup is to get the pi to behave exactly like a hardwa
 `groupmod --new-name we pi`  
 `exit`  
 `ssh we@norns.local`  
-`sudo passwd -l root` ***(sleep)*** 
+`sudo passwd -l root` ***(sleep)***  
 `sudo nano /etc/sudoers.d/010_pi-nopasswd` ***(change pi to we)***  
 `sudo reboot`
 
