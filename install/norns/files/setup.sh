@@ -14,7 +14,7 @@ sudo apt-get purge -y hostapd
 sudo mkdir -p /etc/systemd/system.conf.d
 sudo cp --remove-destination config/10-default-env-vars.conf /etc/systemd/system.conf.d/10-default-env-vars.conf
 sudo cp --remove-destination config/norns-crone.service /etc/systemd/system/norns-crone.service
-sudo rm /etc/systemd/system/norns-supernova.service
+#sudo rm /etc/systemd/system/norns-supernova.service
 #sudo cp --remove-destination config/norns-supernova.service /etc/systemd/system/norns-supernova.service
 sudo cp --remove-destination config/norns-sclang.service /etc/systemd/system/norns-sclang.service
 sudo cp --remove-destination config/norns-jack.service /etc/systemd/system/norns-jack.service
@@ -40,10 +40,10 @@ sudo rm -f /etc/modprobe.d/blacklist-rtl8192cu.conf
 sudo cp config/blacklist-8192cu.conf /etc/modprobe.d/
 # NetworkManager config
 #sudo cp config/interfaces /etc/network/interfaces
-sudo cp config/network-manager/100-disable-wifi-mac-randomization.conf /etc/NetworkManager/conf.d/
-sudo cp config/network-manager/101-logging.conf /etc/NetworkManager/conf.d/
-sudo cp config/network-manager/200-disable-nmcli-auth.conf /etc/NetworkManager/conf.d/
-sudo systemctl disable pppd-dns.service
+#sudo cp config/network-manager/100-disable-wifi-mac-randomization.conf /etc/NetworkManager/conf.d/
+#sudo cp config/network-manager/101-logging.conf /etc/NetworkManager/conf.d/
+#sudo cp config/network-manager/200-disable-nmcli-auth.conf /etc/NetworkManager/conf.d/
+#sudo systemctl disable pppd-dns.service
 
 # limit log sizes
 sudo cp config/journald.conf /etc/systemd/
