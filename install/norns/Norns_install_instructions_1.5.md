@@ -37,7 +37,7 @@ Move the **wpa-supplicant.conf** file you've created to the root of the SD card 
 
 Find the IP of your Raspberry Pi using a software like [Lanscan](https://itunes.apple.com/us/app/lanscan/id472226235) (on MacoS)
    
-Or if you have a keyboard and HDMI monitor plugged into the pi, login and use `ifconfig` to get your IP address (you want the one for `wlan0`).
+Or if you have a keyboard and HDMI monitor plugged into the pi, login and use `ifconfig` to get your IP address `inet` (you want the one listed under `wlan0`).
 
 (Optional)
 Then you can generate an SSH key (replace XX below with the IP of the RPI).  
