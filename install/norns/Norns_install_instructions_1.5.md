@@ -108,10 +108,11 @@ Note - The OLED will continue to display whatever is on it until you reboot agai
 ## Norns
     cd /home/we/fates/install/norns/scripts &&./fates_packages.sh
 
+Answer ***yes (y)*** to "enable realtime priority"
+
 You will be disconnected and the device will reboot. When the pi has rebooted, reconnect via SSH.
 
     cd /home/we/fates/install/norns/scripts &&./fates_install.sh
-Answer ***yes (y)*** to "enable realtime priority"
 
 ## Wifi network  
 
