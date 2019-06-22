@@ -51,29 +51,28 @@ Enter the following commands in a terminal, edit if needed (country etc).
 
 Note - a fair bit of this setup is to get the pi to behave exactly like a hardward norns unit (default username/password, etc.)
 
-```
-sudo raspi-config nonint do_spi 0`  
-sudo raspi-config nonint do_i2c 0`  
-sudo raspi-config nonint do_expand_rootfs`  
-sudo raspi-config nonint do_hostname norns`  
-sudo raspi-config` 
-```
+`sudo raspi-config nonint do_spi 0`  
+`sudo raspi-config nonint do_i2c 0`  
+`sudo raspi-config nonint do_expand_rootfs`  
+`sudo raspi-config nonint do_hostname norns`  
+`sudo raspi-config`  
     (change locale, timezone, and wifi country in the "Localization" menu)  
     (change password here as well to  ***(sleep)***  )
 
 `sudo reboot`  
+
+`ssh pi@norns.local`  
 `sudo passwd root` ***(sleep)***  
 `sudo nano /etc/ssh/sshd_config`  
  ***(uncomment the line for "PermitRootLogin" and change "prohibit-password" to "yes")***  
+`sudo reboot`  
 
-```
-sudo reboot  
-ssh root@norns.local  
-usermod -l we -d /home/we -m pi   
-groupmod --new-name we pi  
-exit 
-ssh we@norns.local  
-```
+`ssh root@norns.local`  
+`usermod -l we -d /home/we -m pi`  
+`groupmod --new-name we pi`  
+`exit` 
+`ssh we@norns.local`  
+
 `sudo passwd -l root` ***(sleep)***  
 `sudo nano /etc/sudoers.d/010_pi-nopasswd` ***(change pi to we)***  
 `sudo reboot`  
