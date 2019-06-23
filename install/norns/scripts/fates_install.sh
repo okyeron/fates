@@ -37,6 +37,7 @@ cd ~
 mkdir dust
 cd dust
 mkdir code
+cd code
 git clone https://github.com/monome/we.git
 git clone https://github.com/tehn/awake.git
 mkdir data
