@@ -81,7 +81,7 @@ Note - a fair bit of this setup is to get the pi to behave exactly like a hardwa
 
 ### Run updates install git, build dependencies, and compile the linux kernel
 
-This builds the Raspberry Pi kernel so expect this to take an hour or more on an RPI 3B+.
+This builds the Raspberry Pi kernel so expect this to take an 90 minutes or more on an RPI 3B+.
 
 Reminder: the password is now ***sleep***  
 
@@ -122,19 +122,11 @@ You will be disconnected and the device will reboot. When the pi has rebooted, r
 
 ## Wifi network  
 
-    cd /home/we/fates/install/norns/scripts &&./fates_networkmanager.sh
-	
-OLD
+Reconnect via SSH
 
-    ssh we@norns.local
-    sudo apt install network-manager
-    sudo cp /home/we/fates/install/norns/files/interfaces /etc/network/interfaces
-    sudo cp /home/we/norns-image/config/network-manager/100-disable-wifi-mac-randomization.conf /etc/NetworkManager/conf.d/
-    sudo cp /home/we/norns-image/config/network-manager/101-logging.conf /etc/NetworkManager/conf.d/
-    sudo cp /home/we/norns-image/config/network-manager/200-disable-nmcli-auth.conf /etc/NetworkManager/conf.d/
-    sudo systemctl disable pppd-dns.service
-    sudo mv /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant_bak.conf
-    sudo reboot
+    cd /home/we/fates/install/norns/scripts &&./fates_networkmanager.sh
+
+Answer yes (Y) to install prompts.
  
 After reboot, on the Raspberry pi, using the OLED screen navigate to SYSTEM > WIFI and add your network manually.
 
