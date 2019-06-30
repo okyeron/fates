@@ -36,12 +36,15 @@ sudo cp -f /home/we/fates/install/norns/files/config.txt /boot
 cd ~
 mkdir dust
 cd dust
-mkdir code
-git clone https://github.com/monome/we.git
-git clone https://github.com/tehn/awake.git
 mkdir data
 mkdir audio
-cd audio
+mkdir code
+
+cd ~/dust/code
+git clone https://github.com/monome/we.git
+git clone https://github.com/tehn/awake.git
+
+cd ~/dust/audio
 sudo mv /home/we/fates/install/norns/files/common_audio.tar common_audio.tar
 tar -xvf common_audio.tar
 rm common_audio.tar
