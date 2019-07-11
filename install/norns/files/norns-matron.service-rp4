@@ -1,0 +1,9 @@
+[Unit]
+
+[Service]
+Type=simple
+User=we
+Group=we
+ExecStart=/home/we/norns/build/ws-wrapper/ws-wrapper ws://*:5555 /home/we/norns/build/matron/matron -f/dev/fb0
+[Install]
+WantedBy=norns.target
