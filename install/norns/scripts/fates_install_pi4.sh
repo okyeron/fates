@@ -3,7 +3,7 @@ git clone https://github.com/monome/norns-image.git
 
 sudo cp -f /home/we/fates/install/norns/files/setup.sh /home/we/norns-image
 sudo cp -f /home/we/fates/install/norns/files/norns.target /home/we/norns-image/config
-sudo cp -f /home/we/fates/install/norns/files/norns-matron.service /home/we/norns-image/config
+sudo cp -f /home/we/fates/install/norns/files/norns-matron.service-rpi4 /home/we/norns-image/config/norns-matron.service
 sudo cp -f /home/we/fates/install/norns/files/norns-init.service /etc/systemd/system/
 sudo cp -f /home/we/fates/install/norns/files/init-norns.sh /home/we/norns-image/scripts
 #sudo cp -f /home/we/fates/install/norns/files/aliases.conf /lib/modprobe.d
