@@ -14,7 +14,7 @@ Fates can also be used for other Raspberry Pi audio projects including PatchboxO
 ## Install instructions
 
 - [Installing Norns on fates 1.2](https://github.com/okyeron/fates/blob/master/install/norns/Norns_install_instructions_1.2.md)
-- [Installing Norns on fates 1.5](https://github.com/okyeron/fates/blob/master/install/norns/Norns_install_instructions_1.5.md)
+- [Installing Norns on fates 1.7](https://github.com/okyeron/fates/blob/master/install/norns/Norns_install_instructions_1.7.md)
 - Installing Orac
 
 ## UART
@@ -26,3 +26,5 @@ Using the Adafruit 954 cable:
 - ***DO NOT connect the red lead if the Pi is powered from USB !***
 
   `screen /dev/cu.usbserial* 115200`
+
+If this does not work, try swapping TX and RX
