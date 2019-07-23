@@ -1,10 +1,10 @@
 ## Fates 1.5 BOM
 
-Some alternate parts are listed with a zero quantity. This are meant to be alternates. Choose what works best for you.
+Some parts are listed with a zero quantity. This are meant to be alternates. Choose what works best for you.
 
 PJ302M jacks are available from [Thonk](https://www.thonk.co.uk/shop/3-5mm-jacks/ ), [Synthcube](https://synthcube.com/cart/3-5mm-mono-jack-pj302m-rt-angle-hex-nut) and [Modular Addict](https://modularaddict.com/pj302m-jacks) among other sources.
 
-Raspberry Pi 3B+ can be purchased from a number of sources such as [Adafruit](https://www.adafruit.com/product/3775?src=raspberrypi), [CanaKit](https://www.canakit.com/raspberry-pi-3-model-b-plus.html?cid=usd&src=raspberrypi&src=raspberrypi), [Element14](http://www.newark.com/49AC7637?src=raspberrypi), etc.
+Raspberry Pi 3B+ or 4B can be purchased from a number of sources such as [Adafruit](https://www.adafruit.com/product/3775?src=raspberrypi), [CanaKit](https://www.canakit.com/raspberry-pi-3-model-b-plus.html?cid=usd&src=raspberrypi&src=raspberrypi), [Element14](http://www.newark.com/49AC7637?src=raspberrypi), etc.
 
 
 | Mouser  | QTY | Part | Value | Package |
@@ -26,6 +26,7 @@ Raspberry Pi 3B+ can be purchased from a number of sources such as [Adafruit](ht
 |238-WM8731SEDS/RV|1|U1|WM8731SEDS/V|SSOP28||
 |815-ABLS2-12.2-D4Y-T|1|Y1|12.288MHz|HC49UP||
 |652-PEC11R-4015F-N24|3|ENC1 ENC2 ENC3|ENC_BOURNS_PEC11||
+|652-PEC11R-4015K-N24|0|ENC1 ENC2 ENC3|ENC_BOURNS_PEC11||
 |NHD-2.7-12864WDW3|1|SSD1322|NHD-2.7-12864WDW3|
 |490-SJ1-3523N|1|CUI_SJ1-3523N|STEREOJACK|
 ||4|Z5 Z6 Z7 Z8|PJ302M2|PJ302M|

@@ -21,6 +21,7 @@ cd /home/we/norns-image
 cd /home/we
 git clone https://github.com/monome/norns.git
 cd /home/we/norns
+sudo cp -f /home/we/fates/install/norns/files/crone/wscript /home/we/norns/crone/wscript
 
 # we need to run sclang
 echo | sclang
@@ -34,6 +35,8 @@ sudo cp -f /home/we/fates/install/norns/files/matron4.sh /home/we/norns/matron.s
 sudo cp -f /home/we/fates/install/norns/files/config4.txt /boot/config.txt
 
 cd ~
+mkdir update
+echo '190422' >> version.txt
 mkdir dust
 cd dust
 mkdir data

@@ -7,41 +7,6 @@
     fragment@0 {
         target-path = "/soc/gpio";
         __overlay__ {
-            knob_pins4: knob_pins4 {
-                brcm,pins = <26 16>;
-                brcm,function = <0>;
-                brcm,pull = <2>;
-            };
-        };
-    };
-
-    fragment@1 {
-        target-path = "/soc";
-        __overlay__ {
-            knob4: knob4 {
-                compatible = "rotary-encoder";
-                #address-cells = <1>;
-                #size-cells = <0>;
-                pinctrl-names = "default";
-                pinctrl-0 = <&knob_pins4>;
-                gpios = <&gpio 26 1>, <&gpio 16 1>;
-                linux,axis = <0>; /* REL_X */
-                rotary-encoder,relative-axis;
-		            rotary-encoder,half-period;
-            };
-        };
-    };
-    //__overrides__ {
-        //relative_axis =  <&knob>,"rotary-encoder,relative-axis";
-        //linux_axis =  <&knob>,"linux,axis";
-        //rollover =  <&knob>,"rotary-encoder,rollover";
-        //half-period =  <&knob>,"rotary-encoder,half-period";
-        //steps =  <&knob>,"rotary-encoder,steps";
-    //};
-
-    fragment@2 {
-        target-path = "/soc/gpio";
-        __overlay__ {
             knob_pins1: knob_pins1 {
                 brcm,pins = <5 6>;
                 brcm,function = <0>;
@@ -50,7 +15,7 @@
         };
     };
 
-    fragment@3 {
+    fragment@1 {
         target-path = "/soc";
         __overlay__ {
             knob1: knob1 {
@@ -74,7 +39,7 @@
         //steps =  <&knob>,"rotary-encoder,steps";
     //};
 
-    fragment@4 {
+    fragment@2 {
         target-path = "/soc/gpio";
         __overlay__ {
             knob_pins2: knob_pins2 {
@@ -85,7 +50,7 @@
         };
     };
 
-    fragment@5 {
+    fragment@3 {
         target-path = "/soc";
         __overlay__ {
             knob2: knob2 {
@@ -109,7 +74,7 @@
         //steps =  <&knob>,"rotary-encoder,steps";
     //};
 
-    fragment@6 {
+    fragment@4 {
         target-path = "/soc/gpio";
         __overlay__ {
             knob_pins3: knob_pins3 {
@@ -120,7 +85,7 @@
         };
     };
 
-    fragment@7 {
+    fragment@5 {
         target-path = "/soc";
         __overlay__ {
             knob0: knob3 {
@@ -144,7 +109,7 @@
         //steps =  <&knob>,"rotary-encoder,steps";
     //};
 
-    fragment@8 {
+    fragment@6 {
        target-path = "/";
        __overlay__ {
           keypad: keys {

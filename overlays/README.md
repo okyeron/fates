@@ -1,4 +1,4 @@
-# Fates DAC board for raspberry pi version 1.5
+# Fates DAC board for raspberry pi version 1.5+
 
 # Overlays and GPIO assignments
 

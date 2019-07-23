@@ -62,7 +62,7 @@ dtoverlay=rpi-proto
 dtoverlay=fates-buttons-encoders
 
 # Screen
-dtoverlay=fates-ssd1322
+dtoverlay=fates-ssd1322,rotate=180
 
 # How much memory in MB to assign to the GPU in MB
 # Lowest possible value is 16

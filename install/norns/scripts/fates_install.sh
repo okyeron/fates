@@ -34,6 +34,8 @@ sudo cp -f /home/we/fates/install/norns/files/matron.sh /home/we/norns
 sudo cp -f /home/we/fates/install/norns/files/config.txt /boot
 
 cd ~
+mkdir update
+echo '190422' >> version.txt
 mkdir dust
 cd dust
 mkdir data
