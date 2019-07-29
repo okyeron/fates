@@ -91,7 +91,11 @@ Reminder: the password is now ***sleep***
     sudo apt-get install vim git bc i2c-tools -y
     
     git clone https://github.com/okyeron/fates.git
-    cd /home/we/fates/install/norns/scripts && ./fates_prepare.sh
+    cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi3.sh
+
+or 
+
+    cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi4.sh
 
 
 ### Testing the ssd1322 OLED
@@ -119,6 +123,10 @@ Answer ***yes (y)*** to "enable realtime priority"
 You will be disconnected and the device will reboot. When the pi has rebooted, reconnect via SSH.
 
     cd /home/we/fates/install/norns/scripts &&./fates_install.sh
+
+or
+
+    cd /home/we/fates/install/norns/scripts &&./fates_install_pi4.sh
 
 ## Wifi network  
 
