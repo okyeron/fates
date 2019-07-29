@@ -19,7 +19,7 @@ Fates can also be used for other Raspberry Pi audio projects including PatchboxO
 
 ## UART
 
-Using the Adafruit 954 cable:
+Using the [Adafruit 954 cable](https://www.adafruit.com/product/954):
 - white lead TX
 - green lead RX
 - black lead GND
