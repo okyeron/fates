@@ -13,9 +13,8 @@ Fates can also be used for other Raspberry Pi audio projects including PatchboxO
 
 ## Install instructions
 
-- [Installing Norns on fates 1.2](https://github.com/okyeron/fates/blob/master/install/norns/Norns_install_instructions_1.2.md)
-- [Installing Norns on fates 1.7](https://github.com/okyeron/fates/blob/master/install/norns/Norns_install_instructions_1.7.md)
-- Installing Orac
+- [Installing Norns on fates 1.7+](https://github.com/okyeron/fates/blob/master/install/norns/Norns_install_instructions_1.7.md)
+- Installing Orac 
 
 ## UART
 
