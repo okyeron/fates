@@ -14,11 +14,11 @@ cp ~/norns-linux-bits/arch-arm-configs/bcm2711_defconfig /home/we/linux/arch/arm
 cp ~/norns-linux-bits/.config /home/we/linux/.config
 
 cd ~/linux
-KERNEL=kernel7
+KERNEL=kernel7l
 make bcm2709_defconfig
 
 make modules_prepare
-make menuconfig
+##make menuconfig
 ##        Device Drivers  ---> Staging Drivers ---> Support for small TFT LCD display modules  --->
 ##        <M>   SSD1322 driver
 
