@@ -87,7 +87,7 @@ Reminder: the password is now ***sleep***
 
     ssh we@norns.local
   
-on pi4 or starting with Buster, do this first
+on pi4 or pi3/Buster, do this first
 	
 	sudo apt update -y  
 	
@@ -98,9 +98,12 @@ Then reboot, reconnect and continue...
     sudo apt-get install vim git bc i2c-tools -y
     
     git clone https://github.com/okyeron/fates.git
+
+on pi3/Stretch
+
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi3.sh
 
-or with pi4 or Buster on pi3
+on pi4 or pi3/Buster
 
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi4.sh
 
