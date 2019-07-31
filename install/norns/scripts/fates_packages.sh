@@ -5,7 +5,8 @@ sudo apt update -y
 sudo apt install --no-install-recommends jackd2 -y
 sudo apt-get install libboost1.62-dev -y
 sudo apt-get install libjack-jackd2-dev -y
-sudo apt install libmonome-dev libnanomsg-dev supercollider-language supercollider-server supercollider-supernova supercollider-dev liblua5.3-dev libudev-dev libevdev-dev liblo-dev libcairo2-dev liblua5.3-dev libavahi-compat-libdnssd-dev libasound2-dev -y
+sudo apt-get install libasound2-dev libudev-dev libevdev-dev liblo-dev libcairo2-dev liblua5.3-dev liblua5.3-dev libnanomsg-dev libavahi-compat-libdnssd-dev -y
+sudo apt install libmonome-dev supercollider-language supercollider-server supercollider-supernova supercollider-dev -y
 sudo apt install dnsmasq -y
 sudo apt install sc3-plugins ladspalist -y
 sudo apt install usbmount -y

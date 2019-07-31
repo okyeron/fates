@@ -4,7 +4,10 @@
 
 ## Preparing the Raspberry PI
 
-### Download Raspbian Stretch Lite (pi3) or Buster Lite (pi3 or pi4) (Buster will be faster to install)
+### Download Raspbian Stretch Lite (pi3) or Buster Lite (pi3 or pi4) 
+
+Note - Buster will be faster to install. Stretch requires a full kernel recompile and will take 90+ minutes.
+
 https://www.raspberrypi.org/downloads/raspbian/  
 
 ### Flash raspbian lite to the sdcard
@@ -81,7 +84,7 @@ Note - a fair bit of this setup is to get the pi to behave exactly like a hardwa
 
 ### Run updates install git, build dependencies, and compile the linux kernel
 
-This builds the Raspberry Pi kernel so expect this to take an 90 minutes or more on an RPI 3B+.
+This installs some required packages and builds the Raspberry Pi kernel modules. If starting from the Stretch release, this recompiles the whole kernel, so expect that to take 90 minutes or more on an RPI 3B+.
 
 Reminder: the password is now ***sleep***  
 
@@ -144,9 +147,11 @@ Answer ***yes (y)*** to "enable realtime priority"
 
 You will be disconnected and the device will reboot. When the pi has rebooted, reconnect via SSH.
 
+pi3/Stretch
+
     cd /home/we/fates/install/norns/scripts &&./fates_install.sh
 
-or
+or (pi4/Buster, pi3/Buster)
 
     cd /home/we/fates/install/norns/scripts &&./fates_install_pi4.sh
 
