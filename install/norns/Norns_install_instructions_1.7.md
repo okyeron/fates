@@ -89,16 +89,13 @@ Reminder: the password is now ***sleep***
   
 on pi4 or pi3/Buster, do this first
 	
-	sudo apt update -y  
-	
-Then reboot, reconnect and continue...  
-    
+	sudo apt update -y      
 	sudo apt-get update  	
     sudo apt-get dist-upgrade -y
 	sudo apt-get install git bc vim bison flex libssl-dev i2c-tools libncurses5-dev -y
 	sudo apt-get install raspberrypi-kernel-headers
- 
- reboot, ?
+ 	
+Then reboot, reconnect and continue...  
     
     cd ~
     git clone https://github.com/okyeron/fates.git
