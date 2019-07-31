@@ -4,7 +4,7 @@
 
 ## Preparing the Raspberry PI
 
-### Download raspbian stretch lite
+### Download Raspbian Stretch lite (pi3) or Buster lite (pi3 or pi4) (Buster will be faster to install)
 https://www.raspberrypi.org/downloads/raspbian/  
 
 ### Flash raspbian lite to the sdcard
