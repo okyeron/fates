@@ -1,6 +1,4 @@
 cd /home/we
-sudo apt-get install git bc vim bison flex libssl-dev i2c-tools libncurses5-dev -y
-sudo apt-get install raspberrypi-kernel-headers
 
 git clone https://github.com/okyeron/norns-linux-bits.git
 git clone --depth=1 https://github.com/raspberrypi/linux
