@@ -70,7 +70,7 @@ Note - a fair bit of this setup is to get the pi to behave exactly like a hardwa
 `ssh root@norns.local`  
 `usermod -l we -d /home/we -m pi`  
 `groupmod --new-name we pi`  
-`exit` 
+`exit`  
 `ssh we@norns.local`  
 
 `sudo passwd -l root` ***(sleep)***  
@@ -86,14 +86,21 @@ This builds the Raspberry Pi kernel so expect this to take an 90 minutes or more
 Reminder: the password is now ***sleep***  
 
     ssh we@norns.local
-	sudo apt-get update
+  
+on pi4 or starting with Buster, do this first
+	
+	sudo apt update -y  
+	
+Then reboot, reconnect and continue...  
+    
+	sudo apt-get update  	
     sudo apt-get dist-upgrade -y
     sudo apt-get install vim git bc i2c-tools -y
     
     git clone https://github.com/okyeron/fates.git
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi3.sh
 
-or 
+or with pi4 or Buster on pi3
 
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi4.sh
 
