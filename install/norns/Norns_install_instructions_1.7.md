@@ -106,6 +106,12 @@ on pi3/Stretch
 on pi4 or pi3/Buster
 
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi4.sh
+    
+Navigate to enable the ssd1322 driver, check to be sure it's enabled with `<M>`
+```
+##        Device Drivers  ---> Staging Drivers ---> Support for small TFT LCD display modules  --->
+##        <M>   SSD1322 driver
+```    
 
 
 ### Testing the ssd1322 OLED
