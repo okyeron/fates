@@ -107,7 +107,7 @@ on pi3/Stretch
 
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi3.sh
 
-on pi3/Buster
+on pi3/Buster ## NOT WORKING CORRECTLY YET
 
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi3buster.sh
 

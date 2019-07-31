@@ -14,7 +14,7 @@ cp ~/norns-linux-bits/arch-arm-configs/bcm2711_defconfig /home/we/linux/arch/arm
 cp ~/norns-linux-bits/.config /home/we/linux/.config
 
 cd ~/linux
-KERNEL=kernel7l
+KERNEL=kernel7
 make bcm2709_defconfig
 
 make modules_prepare
