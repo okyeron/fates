@@ -95,18 +95,27 @@ Then reboot, reconnect and continue...
     
 	sudo apt-get update  	
     sudo apt-get dist-upgrade -y
-    sudo apt-get install vim git bc i2c-tools -y
+	sudo apt-get install git bc vim bison flex libssl-dev i2c-tools libncurses5-dev -y
+	sudo apt-get install raspberrypi-kernel-headers
+ 
+ reboot, ?
     
+    cd ~
     git clone https://github.com/okyeron/fates.git
 
 on pi3/Stretch
 
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi3.sh
 
-on pi4 or pi3/Buster
+on pi3/Buster
+
+    cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi3buster.sh
+
+on pi4
 
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi4.sh
-    
+
+The install process may show `menuconfig`    
 Navigate to enable the ssd1322 driver, check to be sure it's enabled with `<M>`
 ```
 ##        Device Drivers  ---> Staging Drivers ---> Support for small TFT LCD display modules  --->
