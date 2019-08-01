@@ -112,7 +112,10 @@ on pi4
 
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi4.sh
 
-The install process may show `menuconfig`    
+Answer `m` when prompted for new modules - specifically the SSD1322 module.
+
+Or...  
+if the install process shows the `menuconfig` interface:  
 Navigate to enable the ssd1322 driver, check to be sure it's enabled with `<M>`
 ```
 ##        Device Drivers  ---> Staging Drivers ---> Support for small TFT LCD display modules  --->
