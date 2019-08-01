@@ -43,7 +43,7 @@ sudo cp -f /home/we/fates/install/norns/files/config.txt /boot/config.txt
 
 cd ~
 mkdir update
-echo '190422' >> version.txt
+echo '190801' >> version.txt
 mkdir dust
 cd dust
 mkdir data
