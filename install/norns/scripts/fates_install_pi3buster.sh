@@ -3,7 +3,7 @@ git clone https://github.com/monome/norns-image.git
 
 sudo cp -f /home/we/fates/install/norns/files/setup.sh /home/we/norns-image
 sudo cp -f /home/we/fates/install/norns/files/norns.target /home/we/norns-image/config
-sudo cp -f /home/we/fates/install/norns/files/norns-matron.service-rpi4 /home/we/norns-image/config/norns-matron.service
+sudo cp -f /home/we/fates/install/norns/files/norns-matron.service-rpi3 /home/we/norns-image/config/norns-matron.service
 sudo cp -f /home/we/fates/install/norns/files/norns-init.service /etc/systemd/system/
 sudo cp -f /home/we/fates/install/norns/files/init-norns.sh /home/we/norns-image/scripts
 #sudo cp -f /home/we/fates/install/norns/files/aliases.conf /lib/modprobe.d
@@ -37,8 +37,8 @@ echo | sclang
 
 cd /home/we/norns/sc && ./install.sh
 
-sudo cp -f /home/we/fates/install/norns/files/matron4.sh /home/we/norns/matron.sh
-sudo cp -f /home/we/fates/install/norns/files/config4.txt /boot/config.txt
+sudo cp -f /home/we/fates/install/norns/files/matron.sh /home/we/norns/matron.sh
+sudo cp -f /home/we/fates/install/norns/files/config.txt /boot/config.txt
 
 cd ~
 mkdir update

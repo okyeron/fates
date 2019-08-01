@@ -15,6 +15,12 @@ sudo cp -f /home/we/fates/install/norns/files/alsa.conf /usr/share/alsa
 sudo dtc -W no-unit_address_vs_reg -@ -I dts -O dtb -o /boot/overlays/fates-buttons-encoders.dtbo /home/we/fates/overlays/fates1.7-buttons-encoders-overlay.dts
 sudo dtc -W no-unit_address_vs_reg -@ -I dts -O dtb -o /boot/overlays/fates-ssd1322.dtbo /home/we/fates/overlays/fates1.7-ssd1322-overlay.dts
 
+cd ~
+mkdir ~/.local/
+mkdir ~/.local/share/
+mkdir ~/.local/share/SuperCollider
+mkdir ~/.local/share/SuperCollider/Extensions
+
 cd /home/we/norns-image
 ./setup.sh
 
@@ -49,7 +55,6 @@ sudo mv /home/we/fates/install/norns/files/common_audio.tar common_audio.tar
 tar -xvf common_audio.tar
 rm common_audio.tar
 mkdir tape
-
 
 cd ~
 wget https://github.com/monome/maiden/releases/download/v0.13/maiden-v0.13.tgz

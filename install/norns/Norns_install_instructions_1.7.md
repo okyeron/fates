@@ -141,6 +141,7 @@ You can also use `lsmod` to check if the `fbtft_device` has loaded properly. Whi
 Note - The OLED will continue to display whatever is on it until you reboot again.
 
 ## Norns
+
     cd /home/we/fates/install/norns/scripts &&./fates_packages.sh
 
 Answer ***yes (y)*** to "enable realtime priority"
@@ -151,7 +152,11 @@ pi3/Stretch
 
     cd /home/we/fates/install/norns/scripts &&./fates_install.sh
 
-or (pi4/Buster, pi3/Buster)
+pi3/Buster
+
+    cd /home/we/fates/install/norns/scripts &&./fates_install_pi3buster.sh
+
+pi4/Buster
 
     cd /home/we/fates/install/norns/scripts &&./fates_install_pi4.sh
 
