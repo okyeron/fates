@@ -1,5 +1,5 @@
 cd /home/we
-sudo apt install network-manager
+sudo apt install network-manager -y
 sudo cp /home/we/fates/install/norns/files/interfaces /etc/network/interfaces
 sudo cp /home/we/norns-image/config/network-manager/100-disable-wifi-mac-randomization.conf /etc/NetworkManager/conf.d/
 sudo cp /home/we/norns-image/config/network-manager/101-logging.conf /etc/NetworkManager/conf.d/
