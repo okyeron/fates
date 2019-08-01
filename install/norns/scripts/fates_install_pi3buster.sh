@@ -1,4 +1,4 @@
-cd /home/we
+cd ~
 git clone https://github.com/monome/norns-image.git
 
 sudo cp -f /home/we/fates/install/norns/files/setup.sh /home/we/norns-image
