@@ -89,11 +89,8 @@ This installs some required packages and builds the Raspberry Pi kernel modules.
 Reminder: the password is now ***sleep***  
 
     ssh we@norns.local
-  
-on pi4 or pi3/Buster, do this first
 	
 	sudo apt update -y      
-	sudo apt-get update  	
     sudo apt-get dist-upgrade -y
 	sudo apt-get install git bc vim bison flex libssl-dev i2c-tools libncurses5-dev -y
 	sudo apt-get install raspberrypi-kernel-headers
