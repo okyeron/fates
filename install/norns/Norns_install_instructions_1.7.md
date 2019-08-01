@@ -172,17 +172,21 @@ After reboot, on the Raspberry pi, using the OLED screen navigate to SYSTEM > WI
 
 This is a bit of a hassle to do manually, but you only have to do it once and it should ensure your WIFI works properly from here on out.
 
-## Audio configuration for 
+## Audio configuration 
 
     ssh we@norns.local
+    
     amixer controls
+	amixer cset numid=1 123 #Master Playback Volume
+    amixer cset numid=3 29  #Capture Volume
+    amixer cset numid=4 on  #Line Capture Switch 
+    amixer cset numid=7 0   #Sidetone Playback Volume
     amixer cset numid=13 on #Output Mixer HiFi  
-    amixer cset numid=4 on #line in  
-    sudo alsactl store  
-    amixer cset numid=3 0%
-
     sudo alsactl store
 
+you can also view these settings with
+
+	alsamixer
 
 
 *These install instructions are based on the work of Tehn, Nordseele, The Technobear among others. Thank you!*
