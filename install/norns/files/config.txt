@@ -71,4 +71,3 @@ dtoverlay=fates-ssd1322,rotate=180
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=off
 
-
