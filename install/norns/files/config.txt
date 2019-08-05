@@ -61,6 +61,10 @@ dtoverlay=rpi-proto
 # Buttons and encoders
 dtoverlay=fates-buttons-encoders
 
+# Alternate overlay for 4 encoders
+#dtoverlay=fates-buttons-4encoders
+
+
 # Screen
 dtoverlay=fates-ssd1322,rotate=180
 
