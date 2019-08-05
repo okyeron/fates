@@ -33,4 +33,6 @@ sudo cp -v ~/linux/drivers/staging/fbtft/*.ko /lib/modules/$(uname -r)/kernel/dr
 
 sudo depmod -a
 
+rm ~/.config
+
 sudo reboot

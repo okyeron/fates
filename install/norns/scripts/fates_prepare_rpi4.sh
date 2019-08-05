@@ -30,4 +30,6 @@ make -C ~/linux SUBDIRS=drivers/staging/fbtft modules
 ## move the drivers    
 sudo cp -v ~/linux/drivers/staging/fbtft/*.ko /lib/modules/$(uname -r)/kernel/drivers/staging/fbtft/
 
+rm ~/.config
+
 sudo reboot
