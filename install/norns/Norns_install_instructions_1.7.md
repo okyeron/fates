@@ -181,4 +181,33 @@ you can also view these settings with
 	alsamixer
 
 
+## Norns documentation
+
+https://monome.org/docs/norns/
+
+Be sure to check out the section on the [web-based editor maiden](https://monome.org/docs/norns/#maiden). 
+
+Maiden is extremely useful to get debug information if something is going wrong with the norns software. Its interface is arranged into a left sidebar FILE navigator and a right split editor, where the top is the EDITOR and the bottom is the REPL (read-eval-print-loop).
+
+
+## Norns scripts  
+
+You can find scripts/patches for norns on the [lines forum](https://llllllll.co/c/library)
+
+Scripts are installed at `~/dust/code` The easiest way to install is by using `git clone` from the linux command line as most of the scripts are hosted on github.
+
+for example
+
+```
+cd ~/dust/code
+git clone https://github.com/justmat/foulplay.git
+```
+will install the Foulplay script by @justmat
+
+
+## Norns extras
+
+There are 2 extra scripts installed at in the `~/norns` directory - `restart.sh` and `stopall.sh`. These can be used to restart all of the norns software components or stop all those processes (matron, crone/supercollider, JACK, and maiden).
+
+
 *These install instructions are based on the work of Tehn, Nordseele, Thetechnobear among others. Thank you!*
