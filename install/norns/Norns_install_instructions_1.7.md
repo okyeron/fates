@@ -125,8 +125,14 @@ Now we're going to test the OLED display. If your soldering is fine and if the k
 
     ssh we@norns.local
     sudo modprobe fbtft_device custom name=fb_ssd1322 width=128 height=64 speed=16000000 gpios=reset:4,dc:17 rotate=180
+
+pi3  
+
     con2fbmap 1 1
-    
+
+pi4 - should show console as soon as you execute `modprobe`
+
+   
 You can also use `lsmod` to check if the `fbtft_device` has loaded properly. Which should look something like:
 
 	fb_ssd1322             16384  0
@@ -145,7 +151,6 @@ Answer ***yes (y)*** to "enable realtime priority"
 
 You will be disconnected and the device will reboot. When the pi has rebooted, reconnect via SSH.
 
-
 pi3/Buster
 
     cd /home/we/fates/install/norns/scripts &&./fates_install_pi3buster.sh
@@ -153,6 +158,10 @@ pi3/Buster
 pi4/Buster
 
     cd /home/we/fates/install/norns/scripts &&./fates_install_pi4.sh
+    
+Answer yes (Y) to install prompts.
+
+The pi will reboot. When it restarts you should see the norns menu interface. The screen will probably say `error: SUPERCOLLIDER FAIL`. Ignore this for the moment as it should get fixed in the next step. 
 
 ## Wifi network  
 
@@ -161,6 +170,8 @@ Reconnect via SSH
     cd /home/we/fates/install/norns/scripts &&./fates_networkmanager.sh
 
 Answer yes (Y) to install prompts.
+
+This installs network manager and changes your previous wpa_supplicant wifi setup. After the following steps, you'll likely get a new IP address.
  
 After reboot, on the Raspberry pi, using the OLED screen navigate to SYSTEM > WIFI and add your network manually.
 

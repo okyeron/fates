@@ -18,7 +18,7 @@ KERNEL=kernel7l
 make bcm2711_defconfig
 
 make modules_prepare
-make menuconfig
+#make menuconfig
 ##        Device Drivers  ---> Staging Drivers ---> Support for small TFT LCD display modules  --->
 ##        <M>   SSD1322 driver
 
@@ -29,6 +29,8 @@ make -C ~/linux SUBDIRS=drivers/staging/fbtft modules
 
 ## move the drivers    
 sudo cp -v ~/linux/drivers/staging/fbtft/*.ko /lib/modules/$(uname -r)/kernel/drivers/staging/fbtft/
+
+sudo depmod -a
 
 rm ~/.config
 
