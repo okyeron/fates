@@ -51,7 +51,7 @@ sudo cp -f /home/we/fates/install/norns/files/matron4.sh /home/we/norns/matron.s
 sudo cp -f /home/we/fates/install/norns/files/config4.txt /boot/config.txt
 
 #update cmdline.txt for consoleblank=0
-echo " consoleblank=0 fbcon=map:1" | sudo tee -a /boot/cmdline.txt >/dev/null
+sudo sed -i '1s/^/consoleblank=0 fbcon=map:1 /'  /boot/cmdline.txt
 
 cd ~/dust/code
 git clone https://github.com/monome/we.git
