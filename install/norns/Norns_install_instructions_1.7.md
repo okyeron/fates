@@ -4,9 +4,7 @@
 
 ## Preparing the Raspberry PI
 
-### Download Raspbian Stretch Lite (pi3) or Buster Lite (pi3 or pi4) 
-
-Note - Buster will be faster to install. Stretch requires a full kernel recompile and will take 90+ minutes.
+### Download Raspbian Buster Lite (for pi3 or pi4) 
 
 https://www.raspberrypi.org/downloads/raspbian/  
 
@@ -84,7 +82,7 @@ Note - a fair bit of this setup is to get the pi to behave exactly like a hardwa
 
 ### Run updates install git, build dependencies, and compile the linux kernel
 
-This installs some required packages and builds the Raspberry Pi kernel modules. If starting from the Stretch release, this recompiles the whole kernel, so expect that to take 90 minutes or more on an RPI 3B+.
+This installs some required packages and builds the Raspberry Pi kernel modules. 
 
 Reminder: the password is now ***sleep***  
 
@@ -100,11 +98,8 @@ Then reboot, reconnect and continue...
     cd ~
     git clone https://github.com/okyeron/fates.git
 
-on pi3/Stretch
 
-    cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi3.sh
-
-on pi3/Buster ## Needs Testing
+on pi3/Buster 
 
     cd /home/we/fates/install/norns/scripts && ./fates_prepare_rpi3buster.sh
 
@@ -127,7 +122,7 @@ Navigate to enable the ssd1322 driver, check to be sure it's enabled with `<M>`
 Now we're going to test the OLED display. If your soldering is fine and if the kernel has been built correctly, you should see the console displayed on the OLED screen but first we need to do this :
 
     ssh we@norns.local
-    sudo modprobe fbtft_device custom name=fb_ssd1322 width=128 height=64 speed=16000000 gpios=reset:4,dc:17
+    sudo modprobe fbtft_device custom name=fb_ssd1322 width=128 height=64 speed=16000000 gpios=reset:4,dc:17 rotate=180
     con2fbmap 1 1
     
 You can also use `lsmod` to check if the `fbtft_device` has loaded properly. Which should look something like:
@@ -148,9 +143,6 @@ Answer ***yes (y)*** to "enable realtime priority"
 
 You will be disconnected and the device will reboot. When the pi has rebooted, reconnect via SSH.
 
-pi3/Stretch
-
-    cd /home/we/fates/install/norns/scripts &&./fates_install.sh
 
 pi3/Buster
 
@@ -189,4 +181,4 @@ you can also view these settings with
 	alsamixer
 
 
-*These install instructions are based on the work of Tehn, Nordseele, The Technobear among others. Thank you!*
+*These install instructions are based on the work of Tehn, Nordseele, Thetechnobear among others. Thank you!*
