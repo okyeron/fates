@@ -62,6 +62,8 @@ Note - a fair bit of this setup is to get the pi to behave exactly like a hardwa
 
 `sudo reboot`  
 
+Note: if the following `@norns.local` addressing does not work for you, BonJour/ZeroConf may not be working on your system (it's not a default install on Windows). Use the IP address instead.
+
 `ssh pi@norns.local`  
 `sudo passwd root` ***(sleep)***  
 `sudo nano /etc/ssh/sshd_config`  
