@@ -4,6 +4,8 @@ Fates is a pcb add-on board for Raspberry Pi 3 Model B+ and Pi 4 Model B that pr
 
 Fates can also be used for other Raspberry Pi audio projects including PatchboxOS, Orac, etc.
 
+NOTE - the norns software has been tested mostly on the Pi 3B+. It may not work perfectly on older/slower Pi models (3B, etc.) and may need different configuration. 
+
 ![<fates pcb top>](<hardware/fates1.7_top.png>)
 
 ## Build and BOM

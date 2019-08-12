@@ -1,6 +1,5 @@
-
 # Installing Norns on Fates
-***Only for Fates v1.7 pcb or later***
+***For Fates v1.7 pcb or later***
 
 ## Preparing the Raspberry PI
 
@@ -15,7 +14,7 @@ When etcher is finished it will unmount your SD card. Remove the SD card and re-
 
 ### SSH configuration
 
- Create a **wpa-supplicant.conf** file for your network and copy the file to the root of the ***boot*** volume
+Create a `wpa-supplicant.conf` file with your local wifi network settings. Change the country, router name, and key in the example below.
 
     country=US #(your country)
     update_config=1
@@ -27,12 +26,9 @@ When etcher is finished it will unmount your SD card. Remove the SD card and re-
       key_mgmt=WPA-PSK
     }
 
-Open a terminal and type paste the following commands, one line at a time:
+Next create an empty file named `ssh` (lowercase, and be sure there's no file extension)
 
-    cd /Volumes && ls
-    cd boot && touch ssh
-
-Move the **wpa-supplicant.conf** file you've created to the root of the SD card and then unmount the sd card.
+Then copy the **wpa-supplicant.conf** and **ssh** files you've created to the root of the ***boot*** volume on the SD card and then unmount the card.
 
 ### Put the SD card in the Raspberry Pi and boot
 
@@ -193,6 +189,12 @@ you can also view these settings with
 
 	alsamixer
 
+## Set your timezone 
+
+    sudo raspi-config
+    
+	(go to "Localization Options" menu item and select "Change Timezone")  
+    
 
 ## Norns documentation
 
