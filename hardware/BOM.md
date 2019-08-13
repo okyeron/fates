@@ -57,4 +57,4 @@ I'm still getting this sorted out but here's my spacer list. This may also be to
 ||4|10mm|M-F|left/back side|
 ||2-4*|5mm or 6mm|M-M|under display corners|
 
- * You don't really need standoff/spacers on the left side of the pi since the gpio header supports it there.
+\* You don't really need standoff/spacers on the left side of the pi since the gpio header supports it there.
