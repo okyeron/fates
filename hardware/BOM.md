@@ -49,11 +49,12 @@ Spacers/screws - I use 2.5mm size screws and spacers. 3mm should work as well.
 
 I'm still getting this sorted out but here's my spacer list. This may also be to taste if you solder the display header closer to the main board.
 
-|   |  |  |  |  |
+|   | qty | height |  | location  |
 |-----|--|-----|-----|-----|
-||2-3|11mm|M-F|Right side pi|
-||2-3|3mm|M-F|Right side pi bottom|
+||2-4*|11mm|M-F|Right side pi|
+||2-4*|3mm|M-F|Right side pi bottom|
 ||4|10mm|M-M|top corners|
 ||4|10mm|M-F|left/back side|
-||2-3|5mm or 6mm|M-M|under display corners|
+||2-4*|5mm or 6mm|M-M|under display corners|
 
+* You don't really need standoff/spacers on the left side of the pi since the gpio header supports it there.
