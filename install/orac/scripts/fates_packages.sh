@@ -1,12 +1,16 @@
+#!/bin/sh
+echo Adding Monome apt repository...
 curl https://keybase.io/artfwo/pgp_keys.asc | sudo apt-key add -
 echo "deb https://package.monome.org/ stretch main" | sudo tee /etc/apt/sources.list.d/norns.list
 
-curl https://raw.githubusercontent.com/BlokasLabs/patchbox-os-gen/a84e48872d3988e5cfcad4d7fd13c6ae1fa560f3/stage3/00-configure-apt/files/blokas.gpg.key | sudo apt-key add -
-echo "deb http://blokas.io/apt/ rpi main" | sudo tee /etc/apt/sources.list.d/blokas.list
+echo Importing Blokas GPG public key...
+wget -q -O - https://blokas.io/gpg.public.key | sudo apt-key add -
+echo Adding Blokas apt repository...
+sudo wget -q -O /etc/apt/sources.list.d/blokas.list https://blokas.io/blokas.list
+echo Updating package list...
+sudo apt-get update
 
 sudo apt update -y
-
-
 
 sudo apt install --no-install-recommends jackd2 -y
 sudo apt-get install libboost1.62-dev -y

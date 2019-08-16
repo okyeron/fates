@@ -12,9 +12,15 @@ Use balenaEtcher - https://www.balena.io/etcher/ for this.
 
 When etcher is finished it will unmount your SD card. Remove the SD card and re-insert/mount it in your computer for the next steps.
 
-### SSH configuration
 
-Create a `wpa-supplicant.conf` file with your local wifi network settings. Change the country, router name, and key in the example below.
+
+### SSH and WiFi configuration
+
+The following assumes a "headless" situation without a keyboard or monitor attached to the pi. If you have a keyboard and monitor setup, use `sudo raspi-config` and set up wifi and ssh there. 
+
+Create an empty file named `ssh` (lowercase, and be sure there's no file extension)
+
+Next create a `wpa-supplicant.conf` file with your local wifi network settings. Change the country, router name, and key in the example below.
 
     country=US #(your country)
     update_config=1
@@ -26,9 +32,10 @@ Create a `wpa-supplicant.conf` file with your local wifi network settings. Chang
       key_mgmt=WPA-PSK
     }
 
-Next create an empty file named `ssh` (lowercase, and be sure there's no file extension)
-
 Then copy the **wpa-supplicant.conf** and **ssh** files you've created to the root of the ***boot*** volume on the SD card and then unmount the card.
+
+Alternately you can connect to the pi over ethernet and then setup wifi with `raspi-config`. NOTE that you still need the `ssh` file to do this.
+
 
 ### Put the SD card in the Raspberry Pi and boot
 
@@ -42,6 +49,9 @@ Open a terminal and enter the following command (XX is the last two digits of th
 `ssh-keygen -R 192.168.1.XX`
 
 Connect via SSH. `ssh pi@192.168.1.XX` The default password is ***raspberry***
+
+`ssh pi@raspberrypi.local` may also work if you have BonJour/ZeroConf available.
+
 
 ### RPI adjustments
 Enter the following commands in a terminal, edit if needed (country etc).
@@ -115,6 +125,7 @@ Navigate to enable the ssd1322 driver, check to be sure it's enabled with `<M>`
 ##        <M>   SSD1322 driver
 ```    
 
+If you have a pi4 and are using an HDMI monitor, you will want to disconnect the HDMI monitor cable and do the following via SSH. 
 
 ### Testing the ssd1322 OLED
 Now we're going to test the OLED display. If your soldering is fine and if the kernel has been built correctly, you should see the console displayed on the OLED screen but first we need to do this :
@@ -145,7 +156,11 @@ Note - The OLED will continue to display whatever is on it until you reboot agai
 
 Answer ***yes (y)*** to "enable realtime priority"
 
-You will be disconnected and the device will reboot. When the pi has rebooted, reconnect via SSH.
+Keep an eye out for any errors while installing packages here. If you get any errors, you could try this step again.
+
+When this finishes, you will be disconnected and the pi will reboot. 
+
+When the pi has rebooted, reconnect via SSH.
 
 pi3/Buster
 
