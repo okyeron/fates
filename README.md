@@ -6,7 +6,7 @@ Fates can also be used for other Raspberry Pi audio projects including PatchboxO
 
 NOTE - the norns software has been tested mostly on the Pi 3B+. It may not work perfectly on older/slower Pi models (3B, etc.) and may need different configuration. 
 
-![<fates pcb top>](<hardware/fates1.7_top.png>)
+![<fates pcb top>](<hardware/fates1.8_top.png>)
 
 ## Build and BOM
 
