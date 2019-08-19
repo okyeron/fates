@@ -1,6 +1,6 @@
-## Fates 1.7+ BOM
+## Fates 1.8+ BOM
 
-Some parts are listed with a zero quantity. This are meant to be alternates. Choose what works best for you.
+Some parts are listed with a zero quantity. This are meant to be alternates (and should be marked with `ALT`). Choose what works best for you.
 
 PJ302M jacks are available from [Thonk](https://www.thonk.co.uk/shop/3-5mm-jacks/ ), [Synthcube](https://synthcube.com/cart/3-5mm-mono-jack-pj302m-rt-angle-hex-nut) and [Modular Addict](https://modularaddict.com/pj302m-jacks) among other sources.
 
@@ -10,13 +10,13 @@ ENC4 is optional and is not functional for norns right now.
 
 | Mouser  | QTY | Part | Value | Package |
 |-----|:--:|-----|-----|-----|
-||2|R5 R16|100R|0805|
+|603-AC0805FR-07100RL|2|R5 R16|100R|0805|
 |603-RC0805FR-07220RL|4|R9 R10 R11 R12|220R|0805|
 |603-RC0805FR-072K2L|2|R7 R8|2.2K|0805|
 |603-RC0805FR-075K1L|2|R20 R21|5.1K|0805|
 |279-CRGCQ0805F5K6|4|R4 R20 R22 R26|5.6K|0805|
 |603-RC0805FR-0710KL|3|R1 R2 R3|10k|0805|
-||4|R6 R18 R32 R33|47K|0805|
+|RC0805FR-0747KL|4|R6 R18 R32 R33|47K|0805|
 |603-CC805JRNPO9BN180|2|C10 C11|18p|0805|
 |710-885012207082|2|C8 C9|220p|0805|
 |80-C0805C104J5RACLR|7|C1 C2 C3 C4 C5 C6 C7|100n|0805|
@@ -38,13 +38,17 @@ ENC4 is optional and is not functional for norns right now.
 |485-2222|1||2x20 GPIO female header for RasPi|Adafruit Part # 2222|
 |649-10027011-106HLF|1||UART 6 pin header||
 |538-47642-0001|0|ALT Board|USB Micro jack||
-|571-2129691-1|1||USB C jack||
+|806-KUSBX-SLCS1N14-B|1||USB C jack||
 |5GTH920Q|3|S1 S2 S3|5G MEC switch - Quiet||
 |5GTH920|0| ALT |5G MEC switch - Clicky||
 |642-1US09|3| |5G MEC switch caps black||
 |642-1US03|0| ALT |5G MEC switch caps gray||
 ||1| |RPI3 b+||
 ||0| |RPI4 b||
+
+[A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bdba42bdf9 ) is setup with these parts. 
+
+You might need to adjust order quantities, get knurled encoders, or get clicky buttons instead of quiet. So be sure to check part numbers and availability before ordering. NOTE - some parts may be out of stock. See the alternates listed above for other choices.
 
 Spacers/screws - I use 2.5mm size screws and spacers. 3mm should work as well.
 
