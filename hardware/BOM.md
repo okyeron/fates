@@ -46,7 +46,7 @@ ENC4 is optional and is not functional for norns right now.
 ||1| |RPI3 b+||
 ||0| |RPI4 b||
 
-[A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bdba42bdf9 ) is setup with these parts. 
+[A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bdba42bdf9 ) is setup with these parts. Spacers/screws are not included in this cart yet.
 
 You might need to adjust order quantities, get knurled encoders, or get clicky buttons instead of quiet. So be sure to check part numbers and availability before ordering. NOTE - some parts may be out of stock. See the alternates listed above for other choices.
 
