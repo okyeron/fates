@@ -34,13 +34,13 @@ ENC4 is optional and is not functional for norns right now.
 ||4|Z5 Z6 Z7 Z8|PJ302M2|PJ302M|
 |490-MJ-3536|0| ALT |alternate jack - CUI MJ-3536||
 |517-929984-01-20-RK|1||1x20 low profile female header for disp||
-|855-M20-9994045|1||1x20 male pin header for disp||
+|855-M20-9992045|1||1x20 male pin header for disp (gold)||
+|855-M20-9992046|0 ALT ||1x40 male pin header for disp (tin)||
 |485-2222|1||2x20 GPIO female header for RasPi|Adafruit Part # 2222|
 |649-10027011-106HLF|1||UART 6 pin header||
-|538-47642-0001|0|ALT Board|USB Micro jack||
 |806-KUSBX-SLCS1N14-B|1||USB C jack||
-|5GTH920Q|3|S1 S2 S3|5G MEC switch - Quiet||
-|5GTH920|0| ALT |5G MEC switch - Clicky||
+|5GTH920|3|S1 S2 S3|5G MEC switch - Clicky||
+|5GTH920Q|0|S1 S2 S3 ALT|5G MEC switch - Quiet||
 |642-1US09|3| |5G MEC switch caps black||
 |642-1US03|0| ALT |5G MEC switch caps gray||
 ||1| |RPI3 b+||
@@ -64,3 +64,11 @@ I'm still getting this sorted out but here's my spacer list. This may also be to
 ||11||6mm long|2.5mm rack screws|
 
 \* You don't really need standoff/spacers on the left side of the pi since the gpio header supports it there.
+
+### encoder knobs:
+
+ https://store.djtechtools.com/products/chroma-caps-knobs-and-faders
+ https://synthcube.com/cart/synth-diy/parts/knobs/rogan-series-p-knobs
+ https://modularaddict.com/parts/knobs/pt2d-knob
+ https://modularaddict.com/parts/knobs/albs-midibox-knobs
+ https://modularaddict.com/parts/knobs/reanp670d-knobs
