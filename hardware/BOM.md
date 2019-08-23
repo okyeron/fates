@@ -2,9 +2,9 @@
 
 Some parts are listed with a zero quantity. This are meant to be alternates (and should be marked with `ALT`). Choose what works best for you.
 
-PJ302M jacks are available from [Thonk](https://www.thonk.co.uk/shop/3-5mm-jacks/ ), [Synthcube](https://synthcube.com/cart/3-5mm-mono-jack-pj302m-rt-angle-hex-nut) and [Modular Addict](https://modularaddict.com/pj302m-jacks) among other sources.
+PJ302M jacks are available from [Thonk](https://www.thonk.co.uk/shop/3-5mm-jacks/ ), [Synthcube](https://synthcube.com/cart/3-5mm-mono-jack-pj302m-rt-angle-hex-nut) and [Modular Addict](https://modularaddict.com/pj302m-jacks) among other sources. Or you can get the alternate CUI MJ-3536 jack listed below from Mouser.
 
-Raspberry Pi 3B+ or 4B can be purchased from a number of sources such as [Adafruit](https://www.adafruit.com/product/3775?src=raspberrypi), [CanaKit](https://www.canakit.com/raspberry-pi-3-model-b-plus.html?cid=usd&src=raspberrypi&src=raspberrypi), [Element14](http://www.newark.com/49AC7637?src=raspberrypi), etc.
+Raspberry Pi 3B+ or 4B can be purchased from a number of sources such as [PiShop.us](https://www.pishop.us/product/raspberry-pi-4-model-b-1gb/), [Adafruit](https://www.adafruit.com/product/3775?src=raspberrypi), [CanaKit](https://www.canakit.com/raspberry-pi-3-model-b-plus.html?cid=usd&src=raspberrypi&src=raspberrypi), [Element14](http://www.newark.com/49AC7637?src=raspberrypi), etc.
 
 ENC4 is optional and is not functional for norns right now. 
 
@@ -61,7 +61,7 @@ I'm still getting this sorted out but here's my spacer list. This may also be to
 |761-M1257-2545-AL|5|10mm|M-M|top corners|
 |761-M2110-2545-AL|4|15mm|M-F|left/back side|
 |761-M1252-2545-AL|2-4*|5mm or 6mm|M-M|under display corners|
-||11||6mm long|2.5mm rack screws|
+||11||5-6mm long|2.5mm rack screws|
 
 \* You don't really need standoff/spacers on the left side of the pi since the gpio header supports it there.
 
