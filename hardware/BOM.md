@@ -38,13 +38,15 @@ ENC4 is optional and is not functional for norns right now.
 |855-M20-9992046|0 ALT ||1x40 male pin header for disp (tin)||
 |485-2222|1||2x20 GPIO female header for RasPi|Adafruit Part # 2222|
 |649-10027011-106HLF|1||UART 6 pin header||
-|806-KUSBX-SLCS1N14-B|1||USB C jack||
+|806-KUSBX-SLCS1N14-B|1||USB C jack|** See note|
 |5GTH920|3|S1 S2 S3|5G MEC switch - Clicky||
 |5GTH920Q|0|S1 S2 S3 ALT|5G MEC switch - Quiet||
 |642-1US09|3| |5G MEC switch caps black||
 |642-1US03|0| ALT |5G MEC switch caps gray||
 ||1| |RPI3 b+||
 ||0| |RPI4 b||
+
+\** The USB-C jack could be considered optional. You can power everything directly from the Raspberry Pi's own power input OR the Fates USB-C jack (DO NOT TRY TO POWER BOTH!)
 
 [A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bdba42bdf9 ) is setup with these parts. Spacers/screws are not included in this cart yet.
 
@@ -59,8 +61,8 @@ I'm still getting this sorted out but here's my spacer list. This may also be to
 |761-M2106-2545-AL|2-4*|11mm|M-F|Right side pi|
 |855-R25-3000302|2-4*|3mm|M-F|Right side pi bottom|
 |761-M1257-2545-AL|5|10mm|M-M|top corners|
-|761-M2110-2545-AL|4|15mm|M-F|left/back side|
-|761-M1252-2545-AL|2-4*|5mm or 6mm|M-M|under display corners|
+|761-M2111-2545-AL|4|16mm|M-F|left/back side|
+|761-M1252-2545-AL|2-3*|5mm or 6mm|M-M|under oled display corners|
 ||11||5-6mm long|2.5mm rack screws|
 
 \* You don't really need standoff/spacers on the left side of the pi since the gpio header supports it there.
