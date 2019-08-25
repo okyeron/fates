@@ -62,7 +62,7 @@ I'm still getting this sorted out but here's my spacer list. This may also be to
 |855-R25-3000302|2-4*|3mm|M-F|Right side pi bottom|
 |761-M1257-2545-AL|5|10mm|M-M|top corners|
 |761-M2111-2545-AL|4|16mm|M-F|left/back side|
-|761-M1252-2545-AL|2-3*|5mm or 6mm|M-M|under oled display corners|
+|761-M1252-2545-AL / M1253-2545-AL|2-3*|5mm or 6mm|M-M|under oled display corners|
 ||11||5-6mm long|2.5mm rack screws|
 
 \* You don't really need standoff/spacers on the left side of the pi since the gpio header supports it there.
