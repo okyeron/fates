@@ -43,6 +43,7 @@ ENC4 is optional and is not functional for norns right now.
 |5GTH920Q|0|S1 S2 S3 ALT|5G MEC switch - Quiet||
 |642-1US09|3| |5G MEC switch caps black||
 |642-1US03|0| ALT |5G MEC switch caps gray||
+|642-1DS09|0| ALT |5G MEC switch caps black - rounded||
 ||1| |RPI3 b+||
 ||0| |RPI4 b||
 
@@ -58,11 +59,11 @@ I'm still getting this sorted out but here's my spacer list. This may also be to
 
 |   | qty | height |  | location  |
 |-----|--|-----|-----|-----|
-|761-M2106-2545-AL|2-4*|11mm|M-F|Right side pi|
-|855-R25-3000302|2-4*|3mm|M-F|Right side pi bottom|
-|761-M1257-2545-AL|5|10mm|M-M|top corners|
-|761-M2111-2545-AL|4|16mm|M-F|left/back side|
-|761-M1252-2545-AL / M1253-2545-AL|2-3*|5mm or 6mm|M-M|under oled display corners|
+|[761-M2106-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M2106-2545-AL)|2-4*|11mm|M-F|Right side pi|
+|[855-R25-3000302](http://www.mouser.com/Search/ProductDetail.aspx?R=855-R25-3000302)|2-4*|3mm|M-F|Right side pi bottom|
+|[761-M1257-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M1257-2545-AL)|5|10mm|M-M|top corners|
+|[761-M2111-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M2111-2545-AL)|4|16mm|M-F|left/back side|
+|[761-M1252-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M1252-2545-AL) / [M1253-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=M1253-2545-AL)|2-3*|5mm or 6mm|M-M|under oled display corners|
 ||11||5-6mm long|2.5mm rack screws|
 
 \* You don't really need standoff/spacers on the left side of the pi since the gpio header supports it there.
