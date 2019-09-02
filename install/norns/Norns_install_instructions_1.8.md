@@ -1,5 +1,5 @@
-# Installing Norns on Fates
-***For Fates v1.7 pcb or later***
+# Installing Linux and Norns on Fates (full install)
+***For Fates v1.8 pcb or later***
 
 ## Preparing the Raspberry PI
 
@@ -18,6 +18,8 @@ When etcher is finished it will unmount your SD card. Remove the SD card and re-
 
 The following assumes a "headless" situation without a keyboard or monitor attached to the pi. If you have a keyboard and monitor setup, use `sudo raspi-config` and set up wifi and ssh there. 
 
+Alternately you can connect to the pi over ethernet and then setup wifi with `raspi-config`. NOTE that you still need the `ssh` file to do this.
+
 Create an empty file named `ssh` (lowercase, and be sure there's no file extension)
 
 Next create a `wpa-supplicant.conf` file with your local wifi network settings. Change the country, router name, and key in the example below.
@@ -33,8 +35,6 @@ Next create a `wpa-supplicant.conf` file with your local wifi network settings. 
     }
 
 Then copy the **wpa-supplicant.conf** and **ssh** files you've created to the root of the ***boot*** volume on the SD card and then unmount the card.
-
-Alternately you can connect to the pi over ethernet and then setup wifi with `raspi-config`. NOTE that you still need the `ssh` file to do this.
 
 
 ### Put the SD card in the Raspberry Pi and boot
@@ -76,10 +76,13 @@ Note: if the following `@norns.local` addressing does not work for you, BonJour/
  ***(uncomment the line for "PermitRootLogin" and change "prohibit-password" to "yes")***  
 `sudo reboot`  
 
+SSH back in as root to modify the default user.
+
 `ssh root@norns.local`  
 `usermod -l we -d /home/we -m pi`  
 `groupmod --new-name we pi`  
 `exit`  
+
 `ssh we@norns.local`  
 
 `sudo passwd -l root` ***(sleep)***  
@@ -95,12 +98,13 @@ This installs some required packages and builds the Raspberry Pi kernel modules.
 Reminder: the password is now ***sleep***  
 
     ssh we@norns.local
-	
-	sudo apt update -y      
+
+	sudo apt update -y
     sudo apt-get dist-upgrade -y
 	sudo apt-get install git bc vim bison flex libssl-dev i2c-tools libncurses5-dev -y
 	sudo apt-get install raspberrypi-kernel-headers
- 	
+
+
 Then reboot, reconnect and continue...  
     
     cd ~
@@ -152,6 +156,8 @@ Note - The OLED will continue to display whatever is on it until you reboot agai
 
 ## Norns
 
+For the Norns software install, first we need to install various packages that Norns uses.
+
     cd /home/we/fates/install/norns/scripts &&./fates_packages.sh
 
 Answer ***yes (y)*** to "enable realtime priority"
@@ -160,7 +166,7 @@ Keep an eye out for any errors while installing packages here. If you get any er
 
 When this finishes, you will be disconnected and the pi will reboot. 
 
-When the pi has rebooted, reconnect via SSH.
+When the pi has rebooted, reconnect via SSH and finish the Norns install.
 
 pi3/Buster
 
@@ -172,19 +178,22 @@ pi4/Buster
     
 Answer yes (Y) to install prompts.
 
-The pi will reboot. When it restarts you should see the norns menu interface. The screen will probably say `error: SUPERCOLLIDER FAIL`. Ignore this for the moment as it should get fixed in the next step. 
+The pi will reboot. When it restarts you should see "sparkles" and then the norns menu interface. The screen will probably say `error: SUPERCOLLIDER FAIL`. Ignore this for the moment as it should get fixed in the next step. 
 
 ## Wifi network  
 
 Reconnect via SSH
-
+    
+    ssh we@norns.local
     cd /home/we/fates/install/norns/scripts &&./fates_networkmanager.sh
 
-Answer yes (Y) to install prompts.
+Answer yes (Y) to install prompts (if any).
 
 This installs network manager and changes your previous wpa_supplicant wifi setup. After the following steps, you'll likely get a new IP address.
  
-After reboot, on the Raspberry pi, using the OLED screen navigate to SYSTEM > WIFI and add your network manually.
+After reboot, you should see `NONE` at the top of the screen.
+
+Then use the norns menu to navigate to `SYSTEM > WIFI` and add your WiFi network manually. Then use the `ADD` option to choose your network and enter your password, etc.
 
 This is a bit of a hassle to do manually, but you only have to do it once and it should ensure your WIFI works properly from here on out.
 
@@ -208,7 +217,8 @@ you can also view these settings with
 
     sudo raspi-config
     
-	(go to "Localization Options" menu item and select "Change Timezone")  
+	(go to "Localization Options" menu item and select "Change Timezone")
+	(then repeat with "Change WiFi Country")
     
 
 ## Norns documentation
@@ -237,7 +247,7 @@ will install the Foulplay script by @justmat
 
 ## Norns extras
 
-There are 2 extra scripts installed at in the `~/norns` directory - `restart.sh` and `stopall.sh`. These can be used to restart all of the norns software components or stop all those processes (matron, crone/supercollider, JACK, and maiden).
+There are 2 extra scripts installed at in the `~/` home directory - `norns-restart.sh` and `norns-stopall.sh`. These can be used to restart all of the norns software components or stop all those processes (matron, crone/supercollider, JACK, and maiden).
 
 
 *These install instructions are based on the work of Tehn, Nordseele, Thetechnobear among others. Thank you!*
