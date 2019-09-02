@@ -15,7 +15,10 @@ NOTE - the norns software has been tested mostly on the Pi 3B+. It may not work 
 
 ## Install instructions
 
-- [Installing Norns on fates 1.7+](https://github.com/okyeron/fates/blob/master/install/norns/Norns_install_instructions_1.7.md)
+- [Installing Fates 1.8+ from disk image](https://github.com/okyeron/fates/blob/master/install/norns/Norns_disk_image_install.md)
+
+- [Installing Norns on Fates  1.8+ (Full Install Procedure)](https://github.com/okyeron/fates/blob/master/install/norns/Norns_install_instructions_1.8.md)
+
 - [Installing Orac](https://github.com/okyeron/fates/blob/master/install/orac/README.md) (work in progress) 
 
 
