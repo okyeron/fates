@@ -1,5 +1,7 @@
 ## Fates 1.8+ Build
 
+Everything is marked on the pcb, but if you need help, please see below for parts placement
+
 ### 100R resistors  
 ![<100R>](<buildpix/100R.png> "100R resistors")
 
