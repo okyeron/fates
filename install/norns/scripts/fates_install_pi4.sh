@@ -45,8 +45,8 @@ echo | sclang
 
 cd /home/we/norns/sc && ./install.sh
 
-sudo cp -f /home/we/fates/install/norns/files/norns-restart.sh /home/we/norns-restart.sh
-sudo cp -f /home/we/fates/install/norns/files/norns-stopall.sh /home/we/norns-stopall.sh
+#sudo cp -f /home/we/fates/install/norns/files/norns-restart.sh /home/we/norns-restart.sh
+#sudo cp -f /home/we/fates/install/norns/files/norns-stopall.sh /home/we/norns-stopall.sh
 sudo cp -f /home/we/fates/install/norns/files/matron4.sh /home/we/norns/matron.sh
 sudo cp -f /home/we/fates/install/norns/files/config4.txt /boot/config.txt
 

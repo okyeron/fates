@@ -4,10 +4,16 @@
 
 ### Download Fates disk image (for pi3 or pi4) 
 
-url 
+For Raspberry Pi 3b+
+[img file](https://archive.org/download/fates-pi3b-20190901/fates-pi3b-20190901.img)  (2.35GB)
+[torrent link](https://archive.org/download/fates-pi3b-20190901/fates-pi3b-20190901_archive.torrent)
+
+For Raspberry Pi 4b
+[img file](https://archive.org/download/fates-pi4b-20190901/fates-pi4b-20190901.img) (2.35GB)
+[torrent link](https://archive.org/download/fates-pi4b-20190901/fates-pi4b-20190901_archive.torrent)
 
 ### Flash disk image to the sdcard
-Use balenaEtcher - https://www.balena.io/etcher/ for this.
+Use balenaEtcher - https://www.balena.io/etcher/ 
 
 When etcher is finished it will unmount your SD card. 
 
