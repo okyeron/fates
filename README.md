@@ -6,16 +6,19 @@ Fates can also be used for other Raspberry Pi audio projects including PatchboxO
 
 NOTE - this install and norns software has been tested mostly on the Pi3b+ and Pi4b. It may not work perfectly on older/slower Pi models (3b, etc.) and may need different configuration. 
 
-![<fates pcb top>](<hardware/fates1.8_top.png>)
+![<fates pcb top>](<hardware/fates1.8.1_top.png>)
 
-## Build and BOM
+## BOM and Build 
 
-[BOM](hardware/BOM.md)
+[BOM](hardware/BOM.md)  
+
+[Build Guide](hardware/Build.md)
+
 
 
 ## Install instructions
 
-- [Installing Fates 1.8+ from disk image](https://github.com/okyeron/fates/blob/master/install/norns/Norns_disk_image_install.md)
+- [Installing Fates 1.8+ from disk image](https://github.com/okyeron/fates/blob/master/install/norns/Norns_disk_image_install.md) **recommended**
 
 - [Installing Norns on Fates  1.8+ (Full Install Procedure)](https://github.com/okyeron/fates/blob/master/install/norns/Norns_install_instructions_1.8.md)
 
