@@ -6,7 +6,7 @@ PJ302M jacks are available from [Thonk](https://www.thonk.co.uk/shop/3-5mm-jacks
 
 Raspberry Pi 3B+ or 4B can be purchased from a number of sources such as [PiShop.us](https://www.pishop.us/product/raspberry-pi-4-model-b-1gb/), [Adafruit](https://www.adafruit.com/product/3775?src=raspberrypi), [CanaKit](https://www.canakit.com/raspberry-pi-3-model-b-plus.html?cid=usd&src=raspberrypi&src=raspberrypi), [Element14](http://www.newark.com/49AC7637?src=raspberrypi), etc.
 
-ENC4 is optional and is not functional for norns right now. 
+ENC4 is optional and is not functional for norns right now. If you want to use Orac later, get 4 encoders.
 
 | Mouser  | QTY | Part | Value | Package |
 |-----|:--:|-----|-----|-----|
@@ -31,8 +31,8 @@ ENC4 is optional and is not functional for norns right now.
 |652-PEC11R-4020F-N24|0|ALT ENC1 ENC2 ENC3 (ENC4)|20mm Flatted shaft||
 |NHD-2.7-12864WDW3|1|SSD1322|NHD-2.7-12864WDW3|
 |490-SJ1-3523N|1|CUI_SJ1-3523N|STEREOJACK Headphone||
-||4|Z5 Z6 Z7 Z8|PJ302M2|PJ302M|
-|490-MJ-3536|0| ALT |alternate jack - CUI MJ-3536||
+||4|Z5 Z6 Z7 Z8|PJ302M2 1/8in mono jack|PJ302M|
+|490-MJ-3536|0| ALT |alternate 1/8in jack - CUI MJ-3536||
 |517-929984-01-20-RK|1||1x20 low profile female header for disp||
 |855-M20-9992045|1||1x20 male pin header for disp (gold)||
 |855-M20-9992046|0 ALT ||1x40 male pin header for disp (tin)||
@@ -47,9 +47,9 @@ ENC4 is optional and is not functional for norns right now.
 ||1| |RPI3 b+||
 ||0| |RPI4 b||
 
-\** The USB-C jack could be considered optional. You can power everything directly from the Raspberry Pi's own power input OR the Fates USB-C jack (DO NOT TRY TO POWER BOTH!)
+\** The USB-C jack can be considered optional. You can power everything directly from the Raspberry Pi's own power input OR the Fates USB-C jack (DO NOT TRY TO POWER BOTH!)
 
-[A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bdba42bdf9 ) is setup with these parts. **Audio jacks are NOT INCLUDED in this cart** (see note above). If you want them from Mouser order 4 of 490-MJ-3536
+**[A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bdba42bdf9 )** is setup with these parts. **Audio jacks are NOT INCLUDED in this cart** (see note above). If you want them from Mouser order 4 of 490-MJ-3536
 
 Spacers/screws are also not included in this cart. There is a [separate cart for spacers](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=367d290c06) if you need them.
 
