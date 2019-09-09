@@ -14,7 +14,7 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 |652-PEC11R-4015F-N24|3|ENC1 ENC2 ENC3 (ENC4)|15mm Flatted shaft||
 |652-PEC11R-4015K-N24|0|ALT ENC1 ENC2 ENC3 (ENC4)|15mm Knurled shaft||
 |652-PEC11R-4020F-N24|0|ALT ENC1 ENC2 ENC3 (ENC4)|20mm Flatted shaft||
-|NHD-2.7-12864WDW3|1|SSD1322|NHD-2.7-12864WDW3|
+|NHD-2.7-12864WDW3|1|SSD1322|NHD-2.7-12864WDW3 OLED Display|
 |490-SJ1-3523N|1|CUI_SJ1-3523N|STEREOJACK Headphone||
 |517-929984-01-20-RK|1||1x20 low profile female header for disp||
 |855-M20-9992045|1||1x20 male pin header for disp (gold)||

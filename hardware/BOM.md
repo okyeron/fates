@@ -29,7 +29,7 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 |652-PEC11R-4015F-N24|3|ENC1 ENC2 ENC3 (ENC4)|15mm Flatted shaft||
 |652-PEC11R-4015K-N24|0|ALT ENC1 ENC2 ENC3 (ENC4)|15mm Knurled shaft||
 |652-PEC11R-4020F-N24|0|ALT ENC1 ENC2 ENC3 (ENC4)|20mm Flatted shaft||
-|NHD-2.7-12864WDW3|1|SSD1322|NHD-2.7-12864WDW3|
+|NHD-2.7-12864WDW3|1|SSD1322|NHD-2.7-12864WDW3 OLED Display|
 |490-SJ1-3523N|1|CUI_SJ1-3523N|STEREOJACK Headphone||
 ||4|Z5 Z6 Z7 Z8|PJ302M2 1/8in mono jack|PJ302M|
 |490-MJ-3536|0| ALT |alternate 1/8in jack - CUI MJ-3536||
