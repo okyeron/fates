@@ -3,6 +3,7 @@
 Some parts are listed with a zero quantity. This are meant to be alternates (and should be marked with `ALT`). Choose what works best for you.
 
 Raspberry Pi 3B+ or 4B can be purchased from a number of sources such as [PiShop.us](https://www.pishop.us/product/raspberry-pi-4-model-b-1gb/), [Adafruit](https://www.adafruit.com/product/3775?src=raspberrypi), [CanaKit](https://www.canakit.com/raspberry-pi-3-model-b-plus.html?cid=usd&src=raspberrypi&src=raspberrypi), [Element14](http://www.newark.com/49AC7637?src=raspberrypi), etc.
+Mouser also now carries Pis (although a bit more expensive) if you want one-stop shopping (part numbers listed below).
 
 ENC4 is optional and is not functional for norns right now. If you want to use Orac later, get 4 encoders.
 
@@ -26,8 +27,10 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 |642-1US09|3| |5G MEC switch caps black||
 |642-1US03|0| ALT |5G MEC switch caps gray||
 |642-1DS09|0| ALT |5G MEC switch caps black - rounded||
-||1| |RPI3 b+||
-||0| |RPI4 b||
+|[RPI3-MODBP-BULK](http://www.mouser.com/Search/ProductDetail.aspx?R=RPI3-MODBP-BULK)|1| |RPI3 b+||
+|[RPI4-MODBP-2GB-BULK](http://www.mouser.com/Search/ProductDetail.aspx?R=RPI4-MODBP-2GB-BULK)|0| |RPI4 b 2GB||
+|[RPI4-MODBP-4GB-BULK](http://www.mouser.com/Search/ProductDetail.aspx?R=RPI4-MODBP-4GB-BULK)|0| |RPI4 b 4GB||
+||1| |RPI Power supply - 3A USB-C recommended||
 
 You might need to adjust order quantities, get knurled encoders, or get clicky buttons instead of quiet. So be sure to check part numbers and availability before ordering. NOTE - some parts may be out of stock. See the alternates listed above for other choices.
 
