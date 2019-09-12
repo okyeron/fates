@@ -36,7 +36,7 @@ You might need to adjust order quantities, get knurled encoders, or get clicky b
 
 **[A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=c39648324f )** is setup with these parts. 
 
-Spacers/screws are also not included in this cart. There is a [separate cart for spacers](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=367d290c06) if you need them.
+Spacers/screws are also not included in this cart. There is a [separate cart for spacers](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=367d290c06) if you need them (**Cart does not include screws**).
 
 
 **NOTE - If you're getting an acrylic case from the Denki-oto shop, the case kit includes spacers/screws.**
