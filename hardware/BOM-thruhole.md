@@ -39,11 +39,11 @@ You might need to adjust order quantities, get knurled encoders, or get clicky b
 Spacers/screws are also not included in this cart. There is a [separate cart for spacers](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=367d290c06) if you need them.
 
 
-NOTE - If you're getting an acrylic case from the Denki-oto shop, the case kit includes spacers/screws.
+**NOTE - If you're getting an acrylic case from the Denki-oto shop, the case kit includes spacers/screws.**
 
 Spacers/screws - I use 2.5mm size screws and spacers. 3mm should work as well.
 
-I'm still getting this sorted out but here's my spacer list. This may also be to taste if you solder the display header closer to the main board.
+Here's my spacer list. This may also be to taste if you solder the display header closer to the main board. Sorry I don't have a good mouser part number of 2.5M screws.
 
 |   | qty | height |  | location  |
 |-----|--|-----|-----|-----|
