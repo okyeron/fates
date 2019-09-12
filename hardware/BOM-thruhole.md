@@ -43,7 +43,7 @@ Spacers/screws are also not included in this cart. There is a [separate cart for
 
 Spacers/screws - I use 2.5mm size screws and spacers. 3mm should work as well.
 
-Here's my spacer list. This may also be to taste if you solder the display header closer to the main board. Sorry I don't have a good mouser part number of 2.5M screws.
+Here's my spacer list. This may also be to taste if you solder the display header closer to the main board. Sorry I don't have a good Mouser part number for 2.5M screws.
 
 |   | qty | height |  | location  |
 |-----|--|-----|-----|-----|
