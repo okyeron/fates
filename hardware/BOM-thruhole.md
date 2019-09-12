@@ -34,7 +34,7 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 
 You might need to adjust order quantities, get knurled encoders, or get clicky buttons instead of quiet. So be sure to check part numbers and availability before ordering. NOTE - some parts may be out of stock. See the alternates listed above for other choices.
 
-**[A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=c39648324f )** is setup with these parts. 
+**[A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=c39648324f )** is setup with these parts (not including Pi). 
 
 Spacers/screws are also not included in this cart. There is a [separate cart for spacers](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=367d290c06) if you need them (**Cart does not include screws**).
 
