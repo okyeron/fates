@@ -7,6 +7,12 @@ echo Importing Blokas GPG public key...
 wget -q -O - https://blokas.io/gpg.public.key | sudo apt-key add -
 echo Adding Blokas apt repository...
 sudo wget -q -O /etc/apt/sources.list.d/blokas.list https://blokas.io/blokas.list
+
+echo Importing GPG public key for serialosc...
+gpg --keyserver keyserver.ubuntu.com --recv DD9300F1
+gpg --export --armor DD9300F1 | sudo apt-key add -
+echo "deb http://ppa.launchpad.net/artfwo/monome/ubuntu bionic main" | sudo tee /etc/apt/sources.list.d/monome.list
+
 echo Updating package list...
 sudo apt-get update
 
@@ -23,13 +29,9 @@ sudo apt install sc3-plugins ladspalist -y
 sudo apt install usbmount -y
 sudo apt-get install alsa-utils -y
 sudo apt-get install libi2c-dev -y
+sudo apt-get install amidiauto -y
+sudo apt install serialosc -y
 
-
-## NEED patch user first before installing mec/orac
-sudo adduser patch
-sudo usermod -a -G patch, adm, dialout, cdrom, audio, video, plugdev, games, users, input, netdev, spi, i2c, gpio patch
-
-sudo apt install puredata mec orac -y
 
 sudo cp -f /home/we/fates/install/norns/files/interfaces /etc/network
 sudo cp -f /home/we/fates/install/norns/files/systemd-udevd.service /lib/systemd/system/

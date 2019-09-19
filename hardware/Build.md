@@ -1,6 +1,6 @@
 ## Fates 1.8+ Build
 
-Everything is marked on the pcb, but if you need help, please see below for parts placement
+Everything is marked on the pcb, but if you need help, please see below for parts placement  
 
 ### 100R resistors  
 ![<100R>](<buildpix/100R.png> "100R resistors")
@@ -31,3 +31,23 @@ Everything is marked on the pcb, but if you need help, please see below for part
 
 ### 100n capacitors  
 ![<100n>](<buildpix/100n.png> "100n capacitors")
+
+## USB-C Jack 
+Be aware of the routing on the USB Jack pins. There are some that are tied together, so don't be alarmed if your soldering looks bridged on the diagonals.  
+
+![<fates_usbjack>](<buildpix/fates_usbjack.png> "USB Jack")
+![<fates_usbjack>](<buildpix/fates_usb_soldered.jpg> "USB Soldering")
+
+
+## Thru-hole capacitors
+
+These all attach from the bottom. Values are marked on the board. 
+
+## Display header pins
+
+I use the following method for the display pins - insert the long end of the header pins from the top of the display and then solder them in place from the bottom. Then clip the short header pins from the top.
+
+This ends up with about 6mm between the main board and the display carrier board. You could trim the pins if you want the display to sit lower.
+
+![<display_pins>](<buildpix/display_pins.jpg> "display pins")
+![<display_pins2>](<buildpix/display_pins2.jpg> "display pins")

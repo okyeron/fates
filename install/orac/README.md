@@ -40,6 +40,25 @@ You can also use `lsmod` to check if the `fbtft_device` has loaded properly. Whi
     
 Note - The OLED will continue to display whatever is on it until you reboot again.
 
+## Package installs
+
+We need to install various packages that Fates uses.
+
+    cd /home/we/fates/install/orac/scripts &&./fates_packages.sh
+
+Answer ***yes (y)*** to "enable realtime priority"
+
+Keep an eye out for any errors while installing packages here. If you get any errors, you could try this step again.
+
+When this finishes, you will be disconnected and the pi will reboot. 
+
+## disable serialosc for now
+On reboot run this to disable serialosc from starting at boot. You can always turn this back on later.
+```
+sudo systemctl disable serialosc.service
+```
+
+
 ## Compile overlays for buttons, encoders and OLED
 ```
 sudo dtc -W no-unit_address_vs_reg -@ -I dts -O dtb -o /boot/overlays/fates-buttons-encoders.dtbo /home/we/fates/overlays/fates1.7-buttons-encoders-overlay.dts
@@ -69,3 +88,27 @@ pi4
 cd ~
 git clone https://github.com/TheTechnobear/Orac.git
 ```
+
+
+## Audio configuration 
+
+    ssh we@norns.local
+    
+    amixer controls
+	amixer cset numid=1 123 #Master Playback Volume
+    amixer cset numid=3 29  #Capture Volume
+    amixer cset numid=4 on  #Line Capture Switch 
+    amixer cset numid=7 0   #Sidetone Playback Volume
+    amixer cset numid=13 on #Output Mixer HiFi  
+    sudo alsactl store
+
+you can also view these settings with
+
+	alsamixer
+
+## Set your timezone 
+
+    sudo raspi-config
+    
+	(go to "Localization Options" menu item and select "Change Timezone")
+	(then repeat with "Change WiFi Country")

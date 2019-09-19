@@ -71,4 +71,6 @@ rm maiden-v0.13.tgz
 #sudo cp ~/norns-linux-bits/interfaces /etc/network/interfaces
 #sudo mv /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant_bak.conf
 
+sudo systemctl disable serialosc.service
+
 sudo reboot
