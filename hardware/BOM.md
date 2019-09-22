@@ -43,7 +43,6 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 |5GTH920|3|S1 S2 S3|5G MEC switch - Clicky||
 |5GTH920Q|0|S1 S2 S3 ALT|5G MEC switch - Quiet||
 |642-1US09|3| |5G MEC switch caps black||
-|642-1US00|0| |5G MEC switch caps white||
 |642-1US03|0| ALT |5G MEC switch caps gray||
 |642-1DS09|0| ALT |5G MEC switch caps black - rounded||
 |[RPI3-MODBP-BULK](http://www.mouser.com/Search/ProductDetail.aspx?R=RPI3-MODBP-BULK)|1| |RPI3 b+||
