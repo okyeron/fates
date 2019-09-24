@@ -66,14 +66,16 @@ Here's my spacer list. This may also be to taste if you solder the display heade
 
 |   | qty | height |  | location  |
 |-----|--|-----|-----|-----|
-|[761-M2106-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M2106-2545-AL)|2-4*|11mm|M-F|Right side pi|
-|[855-R25-3000302](http://www.mouser.com/Search/ProductDetail.aspx?R=855-R25-3000302)|2-4*|3mm|M-F|Right side pi bottom|
-|[761-M1257-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M1257-2545-AL)|5|10mm|M-M|top corners|
-|[761-M2111-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M2111-2545-AL)|4|16mm|M-F|left/back side|
-|[761-M1252-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M1252-2545-AL) / [M1253-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=M1253-2545-AL)|2-3*|5mm or 6mm|M-M|under oled display corners|
-||11||5-6mm long|2.5mm rack screws|
+|[855-R25-3000302](http://www.mouser.com/Search/ProductDetail.aspx?R=855-R25-3000302)|2|3mm|M-F|Right side pi bottom|
+|[761-M2101-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M2101-2545-AL)|2|6mm|M-F|under oled display corners|
+|[761-M2106-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M2106-2545-AL)|2|11mm|M-F|Right side pi|
+|[761-M1262-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M1262-2545-AL)|4|15mm|F-F|left/back side|
+|[761-M1257-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M1257-2545-AL)|4|10mm|F-F|top corners|
+||2||5mm long|2.5mm rack screws|
+||10||6mm long|2.5mm rack screws|
+||1||8-10mm long|2.5mm rack screws|
 
-\* You don't really need standoff/spacers on the left side of the pi since the gpio header supports it there.
+
 
 ### encoder knobs:
 
