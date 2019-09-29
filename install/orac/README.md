@@ -2,6 +2,12 @@
 
 # Orac setup
 
+### Don't actually do anything on this page. 
+
+The Orac install will eventually get handled with debian packages.
+
+This is just for reference if you wanted to build an Orac setup from scratch on the Fates platform.
+
 ## Linux & Kernel
 
 ### Run updates install git, build dependencies, and compile the linux kernel
