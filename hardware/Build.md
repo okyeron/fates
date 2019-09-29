@@ -1,6 +1,9 @@
 ## Fates 1.8+ Build
 
+This is an intermediate to advanced build. If you've not soldered a TSSOP chip before (the DAC), this build may be challenging. Seek assistance if possible.
+
 Everything is marked on the pcb, but if you need help, please see below for parts placement  
+
 
 ### DAC
 
