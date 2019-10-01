@@ -1,3 +1,17 @@
+/*
+Device Tree overlay for Fates Buttons and Encoders
+
+Default pins (FATES v1.7):
+Button 1 = 24
+Button 2 = 25
+Button 3 = 23
+
+Knob 1 = 5, 6
+Knob 2 = 13, 12
+Knob 3 = 27, 22
+Knob 4 = 26, 16
+*/
+
 /dts-v1/;
 /plugin/;
 
