@@ -52,6 +52,10 @@ Be aware of the routing on the USB Jack pins. There are some that are tied toget
 ![<fates_usbjack>](<buildpix/fates_usbjack.png> "USB Jack")
 ![<fates_usbjack>](<buildpix/fates_usb_soldered.jpg> "USB Soldering")
 
+## TIP - Test voltage
+
+Once the USB-C jack is attached, check USB-C power input voltage levels. I suggest doing this __before__ you attach the pi. There's a 5v/GND header pin holes right near the voltage regulator which is great for testing voltage (+5v).
+
 
 ## Thru-hole capacitors
 
@@ -59,7 +63,7 @@ These all attach from the bottom. Values are marked on the board.
 
 ## Display header pins
 
-Note - Don't solder the display directly to the Fates pcb. Use the low profile header listed in the BOM. You won't want to desolder 20 pins to remove it if something goes wrong with the display.
+NOTE - Don't solder the display directly to the Fates pcb. Use the low profile header listed in the BOM. You won't want to desolder 20 pins to remove it if something goes wrong with the display.
 
 I use the following method for the display pins - insert the long end of the header pins from the top of the display and then solder them in place from the bottom. Then clip the short header pins from the top.
 
@@ -77,3 +81,4 @@ Pin 1 is marked on the bottom of the switches. Pin 1 on the pcb is the lower rig
 Audio jacks mount __from the bottom__
 
 NOTE - if you use the CUI MJ-3536 jacks from Mouser, you may need to trim or file the pins to fit in the pcb. The CUI jack pins are just a tiny bit wider than the PJ302M jacks.
+
