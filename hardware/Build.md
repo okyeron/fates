@@ -47,7 +47,10 @@ Do the little voltage regulator next and then check your work on all those tiny 
 
 
 ## USB-C Jack 
-Be aware of the routing on the USB Jack pins. There are some that are tied together, so don't be alarmed if your soldering looks bridged on the diagonals.  
+
+The pins here are quite small and close together. Use flux!
+
+Be aware of the routing on the USB Jack pins. Some pins are tied together, so don't be alarmed if your soldering looks bridged on the diagonals.  
 
 ![<fates_usbjack>](<buildpix/fates_usbjack.png> "USB Jack")
 ![<fates_usbjack>](<buildpix/fates_usb_soldered.jpg> "USB Soldering")
