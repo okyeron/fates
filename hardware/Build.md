@@ -71,3 +71,9 @@ This ends up with about 6mm between the main board and the display carrier board
 ## Switches (buttons)
 
 Pin 1 is marked on the bottom of the switches. Pin 1 on the pcb is the lower right corner - there's a very small dot there.
+
+## Audio jacks
+
+Audio jacks mount __from the bottom__
+
+NOTE - if you use the CUI MJ-3536 jacks from Mouser, you may need to trim or file the pins to fit in the pcb. The CUI jack pins are just a tiny bit wider than the PJ302M jacks.

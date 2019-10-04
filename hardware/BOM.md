@@ -56,9 +56,11 @@ You might need to adjust order quantities, get knurled encoders, or get clicky b
 
 **[A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bdba42bdf9 )** is setup with these parts (not including Pi). **Audio jacks are NOT INCLUDED in this cart** (see note above). If you want them from Mouser order 4 of 490-MJ-3536
 
-Spacers/screws are also not included in this cart. There is a [separate cart for spacers](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=367d290c06) if you need them (**Cart does not include screws**).
+## Spacers/screws
 
 **NOTE - If you're getting an acrylic case from the Denki-oto shop, the case kit includes spacers/screws.**
+
+Spacers/screws are also not included in the cart above. There is a [separate cart for spacers](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=367d290c06) if you need them (**Cart does not include screws**).
 
 Spacers/screws - I use 2.5mm size screws and spacers. 3mm should work as well.
 
