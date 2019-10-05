@@ -38,6 +38,7 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 |855-M20-9992045|1||1x20 male pin header for disp (gold)||
 |855-M20-9992046|0 ALT ||1x40 male pin header for disp (tin)||
 |485-2222|1||2x20 GPIO female header for RasPi|Adafruit Part # 2222|
+|855-M20-7832046|0||ALT 2x20 GPIO header||
 |649-10027011-106HLF|1||UART 6 pin header||
 |806-KUSBX-SLCS1N14-B|1||USB C jack|** See note|
 |5GTH920|3|S1 S2 S3|5G MEC switch - Clicky||
