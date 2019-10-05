@@ -60,8 +60,8 @@ Here's my spacer list. This may also be to taste if you solder the display heade
 
 ### encoder knobs:
 
+ https://modularaddict.com/parts/knobs/reanp670d-knobs  
  https://store.djtechtools.com/products/chroma-caps-knobs-and-faders  
  https://synthcube.com/cart/synth-diy/parts/knobs/rogan-series-p-knobs  
  https://modularaddict.com/parts/knobs/pt2d-knob  
  https://modularaddict.com/parts/knobs/albs-midibox-knobs  
- https://modularaddict.com/parts/knobs/reanp670d-knobs  
