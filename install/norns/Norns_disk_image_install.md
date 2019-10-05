@@ -9,8 +9,13 @@ For Raspberry Pi 3b+
 [torrent link](https://archive.org/download/fates-pi3b-20190901/fates-pi3b-20190901_archive.torrent)
 
 For Raspberry Pi 4b
-[img file](https://archive.org/download/fates-pi4b-20190901/fates-pi4b-20190901.img) (2.35GB)
-[torrent link](https://archive.org/download/fates-pi4b-20190901/fates-pi4b-20190901_archive.torrent)
+[img file](https://archive.org/download/fates-pi4b-20191004/fates-pi4b-20191004.img) (2.2GB)
+[torrent link](https://archive.org/download/fates-pi4b-20191004/fates-pi4b-20191004_archive.torrent)
+
+Note:
+the images dated 20190901 include norns version 190817 (norns 2.1.1)
+the images dated 20191004 include norns version 190930 (norns 2.2.0)
+
 
 ### Flash disk image to the sdcard
 Use balenaEtcher - https://www.balena.io/etcher/ 

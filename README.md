@@ -30,6 +30,8 @@ Fates can be powered either from it's own USB-C power jack, or the Raspberry Pi 
 
 [BOM](hardware/BOM.md)  
 
+[BOM - Thru-hole only](hardware/BOM-thruhole.md)  (for SMD assembled boards)
+
 [Build Guide](hardware/Build.md)
 
 
