@@ -50,9 +50,9 @@ Here's my spacer list. This may also be to taste if you solder the display heade
 |-----|--|-----|-----|-----|
 |[855-R25-3000302](http://www.mouser.com/Search/ProductDetail.aspx?R=855-R25-3000302)|2|3mm|M-F|Right side pi bottom|
 |[761-M2101-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M2101-2545-AL)|2|6mm|M-F|under oled display corners|
-|[761-M2106-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M2106-2545-AL)|2|11mm|F-F|Right side pi|
+|[761-M1258-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M1258-2545-AL)|2|11mm|F-F|Right side pi|
 |[761-M1262-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M1262-2545-AL)|4|15mm|F-F|left/back side|
-|[761-M1257-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M1257-2545-AL)|4|10mm|M-F|top corners|
+|[761-M2105-2545-AL](http://www.mouser.com/Search/ProductDetail.aspx?R=761-M2105-2545-AL)|4|10mm|M-F|top corners|
 ||2||5mm long|2.5mm rack screws|
 ||10||6mm long|2.5mm rack screws|
 ||1||8-10mm long|2.5mm rack screws|
