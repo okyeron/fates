@@ -14,10 +14,10 @@ Solder the DAC first. Use flux. Google some videos if you're not sure how best t
 Do the little voltage regulator next and then check your work on all those tiny pins with a loupe/magnifier.
 
 ### 100n capacitors  
-![<100n>](<buildpix/100n.png> "100n capacitors")
+<img src="buildpix/100n.png" alt="100n capacitors" width="720" height="480" />
 
 ### 220p capacitors  
-![<220p>](<buildpix/220p.png> "220p capacitors")
+![<220p>](<buildpix/220p.png =720x480> "220p capacitors")
 
 ### 18p capacitors  
 ![<18p>](<buildpix/18p.png> "18p capacitors")
