@@ -17,31 +17,33 @@ Do the little voltage regulator next and then check your work on all those tiny 
 <img src="buildpix/100n.png" alt="100n capacitors" width="720" height="480" />
 
 ### 220p capacitors  
-![<220p>](<buildpix/220p.png =720x480> "220p capacitors")
+<img src="buildpix/220p.png" alt="220p capacitors" width="720" height="480" />
+
 
 ### 18p capacitors  
-![<18p>](<buildpix/18p.png> "18p capacitors")
+<img src="buildpix/100n.png" alt="100n capacitors" width="720" height="480" />
 
 ### 100R resistors  
-![<100R>](<buildpix/100R.png> "100R resistors")
+<img src="buildpix/100R.png" alt="100R resistors" width="720" height="480" />
 
 ### 220R resistors  
-![<220R>](<buildpix/220R.png> "220R resistors")
+<img src="buildpix/220R.png" alt="220R resistors" width="720" height="480" />
 
 ### 2.2K resistors  
-![<2.2K>](<buildpix/2k2.png> "2.2K resistors")
+<img src="buildpix/2k2.png" alt="2k2 resistors" width="720" height="480" />
 
 ### 5.1K resistors  
-![<5.1K>](<buildpix/5k1.png> "5.1K resistors")
+<img src="buildpix/5k1.png" alt="5k1 resistors" width="720" height="480" />
 
 ### 5.6K resistors  
-![<5.6K>](<buildpix/5k6.png> "5.6K resistors")
+<img src="buildpix/5k6.png" alt="5k6 resistors" width="720" height="480" />
 
 ### 10K resistors  
-![<10K>](<buildpix/10k.png> "10K resistors")
+<img src="buildpix/10k.png" alt="10k resistors" width="720" height="480" />
 
 ### 47K resistors  
-![<47K>](<buildpix/47k.png> "47K resistors")
+<img src="buildpix/47k.png" alt="47k resistors" width="720" height="480" />
+
 
 
 
