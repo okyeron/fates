@@ -55,7 +55,7 @@ The pins here are quite small and close together. Use flux!
 Be aware of the routing on the USB Jack pins. Some pins are tied together, so don't be alarmed if your soldering looks bridged on the diagonals.  
 
 <img src="buildpix/fates_usbjack.png" alt="USB Jack" width="275" height="473" />
-<img src="buildpix/fates_usb_soldered.png" alt="USB Soldering" width="275" height="473" />
+<img src="buildpix/fates_usb_soldered.jpg" alt="USB Soldering" width="275" height="473" />
 
 
 ## TIP - Test voltage
