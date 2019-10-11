@@ -18,6 +18,7 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 |NHD-2.7-12864WDW3|1|SSD1322|NHD-2.7-12864WDW3 OLED Display|
 |490-SJ1-3523N|1|CUI_SJ1-3523N|STEREOJACK Headphone||
 |517-929984-01-20-RK|1||1x20 low profile female header for disp||
+|200-SLW12001TS|0|ALT|1x20 low profile female header for disp||
 |855-M20-9992045|1||1x20 male pin header for disp (gold)||
 |855-M20-9992046|0 ALT ||1x40 male pin header for disp (tin)||
 |485-2222|1||2x20 GPIO female header for RasPi|Adafruit Part # 2222|

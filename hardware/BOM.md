@@ -35,6 +35,7 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 ||4|Z5 Z6 Z7 Z8|PJ302M2 1/8in mono jack|PJ302M|
 |490-MJ-3536|0| ALT |alternate 1/8in jack - CUI MJ-3536||
 |517-929984-01-20-RK|1||1x20 low profile female header for disp||
+|200-SLW12001TS|0|ALT|1x20 low profile female header for disp||
 |855-M20-9992045|1||1x20 male pin header for disp (gold)||
 |855-M20-9992046|0 ALT ||1x40 male pin header for disp (tin)||
 |485-2222|1||2x20 GPIO female header for RasPi|Adafruit Part # 2222|
