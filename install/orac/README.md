@@ -1,120 +1,22 @@
 # Fates DAC board for raspberry pi
 
-# Orac setup
+# Orac BETA 
 
-### Don't actually do anything on this page. 
+Everything here depends on having a working norns setup. Please see that installation first.
 
-The Orac install will eventually get handled with debian packages.
+NOTE - This thread on the lines forum is the best place to get information on running Orac on Fates.
 
-This is just for reference if you wanted to build an Orac setup from scratch on the Fates platform.
+https://llllllll.co/t/orac-sidekick-and-pure-data-for-norns/26198
 
-## Linux & Kernel
+### Video:
 
-### Run updates install git, build dependencies, and compile the linux kernel
+https://youtu.be/Ukzc3W_lcjk
 
-This installs some required packages and builds the Raspberry Pi kernel modules. 
+### Download
 
-	sudo apt-get update
-    sudo apt-get dist-upgrade -y
-    sudo apt-get install vim git bc i2c-tools -y
-    
-    git clone https://github.com/okyeron/fates.git
+Orac, Sidekick - https://patchstorage.com/orac-2-0-for-norns/ 
 
-for pi3  
+### Demo Pure Data apps featured in Video
 
-    cd /home/pi/fates/install/orac/scripts && ./fates_prepare_rpi3buster.sh
-
-or for pi4
-
-    cd /home/pi/fates/install/orac/scripts && ./fates_prepare_rpi4.sh
-
-
-### Testing the ssd1322 OLED
-Now pi're going to test the OLED display. If your soldering is fine and if the kernel has been built correctly, you should see the console displayed on the OLED screen but first pi need to do this :
-
-
-    sudo modprobe fbtft_device custom name=fb_ssd1322 width=128 height=64 speed=16000000 gpios=reset:4,dc:17 rotate=180
-    con2fbmap 1 1
-    
-You can also use `lsmod` to check if the `fbtft_device` has loaded properly. Which should look something like:
-
-	fb_ssd1322             16384  0
-	fbtft_device           49152  0
-	fbtft                  45056  2 fbtft_device,fb_ssd1322
-
-`con2fbmap 1 0` will map the console back to HDMI (fb0) if you need that.
-    
-Note - The OLED will continue to display whatever is on it until you reboot again.
-
-## Package installs
-
-We need to install various packages that Fates uses.
-
-    cd /home/we/fates/install/orac/scripts &&./fates_packages.sh
-
-Answer ***yes (y)*** to "enable realtime priority"
-
-Keep an eye out for any errors while installing packages here. If you get any errors, you could try this step again.
-
-When this finishes, you will be disconnected and the pi will reboot. 
-
-## disable serialosc for now
-On reboot run this to disable serialosc from starting at boot. You can always turn this back on later.
-```
-sudo systemctl disable serialosc.service
-```
-
-
-## Compile overlays for buttons, encoders and OLED
-```
-sudo dtc -W no-unit_address_vs_reg -@ -I dts -O dtb -o /boot/overlays/fates-buttons-encoders.dtbo /home/we/fates/overlays/fates1.7-buttons-encoders-overlay.dts
-sudo dtc -W no-unit_address_vs_reg -@ -I dts -O dtb -o /boot/overlays/fates-buttons-4encoders.dtbo /home/we/fates/overlays/fates1.7-buttons-4encoders-overlay.dts
-sudo dtc -W no-unit_address_vs_reg -@ -I dts -O dtb -o /boot/overlays/fates-ssd1322.dtbo /home/we/fates/overlays/fates1.7-ssd1322-overlay.dts
-```
-Update system files for audio, etc.
-```
-sudo cp -f /home/we/fates/install/norns/files/raspi-blacklist.conf /etc/modprobe.d
-sudo cp -f /home/we/fates/install/norns/files/asound.conf /etc
-sudo cp -f /home/we/fates/install/norns/files/alsa.conf /usr/share/alsa
-```
-
-pi3
-
-    sudo cp -f /home/we/fates/install/norns/files/config.txt /boot/config.txt
-
-pi4
-
-    sudo cp -f /home/we/fates/install/norns/files/config4.txt /boot/config.txt
-
-
-
-## Orac
-
-```
-cd ~
-git clone https://github.com/TheTechnobear/Orac.git
-```
-
-
-## Audio configuration 
-
-    ssh we@norns.local
-    
-    amixer controls
-	amixer cset numid=1 123 #Master Playback Volume
-    amixer cset numid=3 29  #Capture Volume
-    amixer cset numid=4 on  #Line Capture Switch 
-    amixer cset numid=7 0   #Sidetone Playback Volume
-    amixer cset numid=13 on #Output Mixer HiFi  
-    sudo alsactl store
-
-you can also view these settings with
-
-	alsamixer
-
-## Set your timezone 
-
-    sudo raspi-config
-    
-	(go to "Localization Options" menu item and select "Change Timezone")
-	(then repeat with "Change WiFi Country")
+SimplePd - https://patchstorage.com/simple-demo-patch-for-norns/ 1
+PolyPd - https://patchstorage.com/polypd-for-norns/ 
