@@ -37,7 +37,7 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 |517-929984-01-20-RK|1||1x20 low profile female header for disp||
 |200-SLW12001TS|0|ALT|1x20 low profile female header for disp||
 |855-M20-9992045|1||1x20 male pin header for disp (gold)||
-|855-M20-9992046|0 ALT ||1x40 male pin header for disp (tin)||
+|855-M20-9992046|0|ALT|1x40 male pin header for disp (tin)||
 |485-2222|1||2x20 GPIO female header for RasPi|Adafruit Part # 2222|
 |855-M20-7832046|0|ALT|Alternate 2x20 GPIO female header||
 |649-10027011-106HLF|1||UART 6 pin header||
@@ -57,6 +57,8 @@ You might need to adjust order quantities, get knurled encoders, or get clicky b
 \** The USB-C jack can be considered optional. You can power everything directly from the Raspberry Pi's own power input OR the Fates USB-C jack (DO NOT TRY TO POWER BOTH!)
 
 **[A mouser cart](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bdba42bdf9 )** is setup with these parts (not including Pi). **Audio jacks are NOT INCLUDED in this cart** (see note above). If you want them from Mouser order 4 of 490-MJ-3536
+
+**NOTE - Mouser cart likely has items out of stock right now.** Check above for alternate part numbers.
 
 ## Spacers/screws
 
