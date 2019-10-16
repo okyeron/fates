@@ -8,10 +8,15 @@ Everything is marked on the pcb, but if you need help, please see below for part
 ### DAC
 
 Solder the DAC first. Use flux. Google some videos if you're not sure how best to solder it.
+<img src="buildpix/dac.png" alt="dac" width="720" height="480" />
+
 
 ### Voltage regulator
-
 Do the little voltage regulator next and then check your work on all those tiny pins with a loupe/magnifier.
+
+<img src="buildpix/vreg.png" alt="vreg" width="720" height="480" />
+
+
 
 ### 100n capacitors  
 <img src="buildpix/100n.png" alt="100n capacitors" width="720" height="480" />
@@ -44,7 +49,9 @@ Do the little voltage regulator next and then check your work on all those tiny 
 <img src="buildpix/47k.png" alt="47k resistors" width="720" height="480" />
 
 
-
+### Crystal
+Save the crystal for last of the smd stuff since it's big and gets in the way of soldering the smaller parts.
+<img src="buildpix/crystal.png" alt="crystal" width="720" height="480" />
 
 
 ## USB-C Jack 
@@ -66,6 +73,24 @@ Once the USB-C jack is attached, check USB-C power input voltage levels. I sugge
 
 These all attach from the bottom. Values are marked on the board. 
 
+## Switches (buttons)
+
+Pin 1 is marked on the bottom of the switches. Pin 1 on the pcb is the lower right corner - there's a very small dot there.
+
+<img src="buildpix/buttons.png" alt="buttonss" width="720" height="480" />
+
+## Audio jacks
+
+Audio jacks mount __from the bottom__
+
+NOTE - if you use the CUI MJ-3536 jacks from Mouser, you may need to trim or file the pins to fit in the pcb. The CUI jack pins are just a tiny bit wider than the PJ302M jacks.
+
+## Headers
+
+The 2x20 (for the pi) goes in from the bottom.
+
+The 1x20 (for the display) goes in from the top.
+
 ## Display header pins
 
 NOTE - Don't solder the display directly to the Fates pcb. Use the low profile header listed in the BOM. You won't want to desolder 20 pins to remove it if something goes wrong with the display.
@@ -77,13 +102,7 @@ This ends up with about 6mm between the main board and the display carrier board
 ![<display_pins>](<buildpix/display_pins.jpg> "display pins")
 ![<display_pins2>](<buildpix/display_pins2.jpg> "display pins")
 
-## Switches (buttons)
+## Encoders
 
-Pin 1 is marked on the bottom of the switches. Pin 1 on the pcb is the lower right corner - there's a very small dot there.
-
-## Audio jacks
-
-Audio jacks mount __from the bottom__
-
-NOTE - if you use the CUI MJ-3536 jacks from Mouser, you may need to trim or file the pins to fit in the pcb. The CUI jack pins are just a tiny bit wider than the PJ302M jacks.
+Do these last. Don't worry about mounting nuts/washers
 
