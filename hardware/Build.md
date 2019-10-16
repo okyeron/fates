@@ -21,7 +21,7 @@ Do the little voltage regulator next and then check your work on all those tiny 
 
 
 ### 18p capacitors  
-<img src="buildpix/100n.png" alt="100n capacitors" width="720" height="480" />
+<img src="buildpix/18p.png" alt="100n capacitors" width="720" height="480" />
 
 ### 100R resistors  
 <img src="buildpix/100R.png" alt="100R resistors" width="720" height="480" />

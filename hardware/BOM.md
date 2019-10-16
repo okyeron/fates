@@ -12,7 +12,7 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 | Mouser  | QTY | Part | Value | Package |
 |-----|:--:|-----|-----|-----|
 |603-AC0805FR-07100RL|2|R5 R16|100R|0805|
-|603-RC0805FR-07220RL|4|R9 R10 R11 R12|220R|0805|
+|603-RC0805FR-07220RL|4|R16 R17 R18 R19|220R|0805|
 |603-RC0805FR-072K2L|2|R7 R8|2.2K|0805|
 |603-RC0805FR-075K1L|2|R20 R21|5.1K|0805|
 |279-CRGCQ0805F5K6|4|R4 R20 R22 R26|5.6K|0805|
