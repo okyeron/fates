@@ -53,6 +53,9 @@ Do the little voltage regulator next and then check your work on all those tiny 
 Save the crystal for last of the smd stuff since it's big and gets in the way of soldering the smaller parts.
 <img src="buildpix/crystal.png" alt="crystal" width="720" height="480" />
 
+# Thru-hole
+
+I have been doing the thru-hole stuff in the following order: USB jack, audio jacks, headphone jack, capacitors, pin headers (2x20 first, then flip over for the 1x20), switches, and encoders last. Then do the headers on the display.
 
 ## USB-C Jack 
 
@@ -63,33 +66,37 @@ Be aware of the routing on the USB Jack pins. Some pins are tied together, so do
 <img src="buildpix/fates_usbjack.png" alt="USB Jack" width="275" height="473" />
 <img src="buildpix/fates_usb_soldered.jpg" alt="USB Soldering" width="275" height="473" />
 
-
 ## TIP - Test voltage
 
 Once the USB-C jack is attached, check USB-C power input voltage levels. I suggest doing this __before__ you attach the pi. There's a 5v/GND header pin holes right near the voltage regulator which is great for testing voltage (+5v).
+
+## Audio jacks
+
+Audio jacks (and headphone jack) mount __from the bottom__
+
+NOTE - if you use the CUI MJ-3536 jacks from Mouser, you may need to trim or file the pins to fit in the pcb. The CUI jack pins are just a tiny bit wider than the PJ302M jacks.
 
 
 ## Thru-hole capacitors
 
 These all attach from the bottom. Values are marked on the board. 
 
-## Switches (buttons)
-
-Pin 1 is marked on the bottom of the switches. Pin 1 on the pcb is the lower right corner - there's a very small dot there.
-
-<img src="buildpix/buttons.png" alt="buttonss" width="720" height="480" />
-
-## Audio jacks
-
-Audio jacks mount __from the bottom__
-
-NOTE - if you use the CUI MJ-3536 jacks from Mouser, you may need to trim or file the pins to fit in the pcb. The CUI jack pins are just a tiny bit wider than the PJ302M jacks.
-
 ## Headers
 
 The 2x20 (for the pi) goes in from the bottom.
 
 The 1x20 (for the display) goes in from the top.
+
+## Switches (buttons)
+
+Pin 1 is marked on the bottom of the switches. Pin 1 on the pcb is the lower right corner - there's a very small dot there.
+
+<img src="buildpix/buttons.png" alt="buttons" width="720" height="480" />
+
+
+## Encoders
+
+Do these last. Don't worry about mounting nuts/washers
 
 ## Display header pins
 
@@ -102,7 +109,11 @@ This ends up with about 6mm between the main board and the display carrier board
 ![<display_pins>](<buildpix/display_pins.jpg> "display pins")
 ![<display_pins2>](<buildpix/display_pins2.jpg> "display pins")
 
-## Encoders
+## TIP - Test voltage again
 
-Do these last. Don't worry about mounting nuts/washers
+You can attach the Pi without an SD card inside and test voltages on the board
+
+<img src="buildpix/voltage.png" alt="voltages" width="720" height="480" />
+
+
 
