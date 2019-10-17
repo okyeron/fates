@@ -73,6 +73,8 @@ Be aware of the routing on the USB Jack pins. Some pins are tied together, so do
 
 Once the USB-C jack is attached, check USB-C power input voltage levels. I suggest doing this __before__ you attach the pi. There's a 5v/GND header pin holes right near the voltage regulator which is great for testing voltage (+5v).
 
+<img src="buildpix/voltage1.png" alt="voltages" width="720" height="480" />
+
 ## Audio jacks
 
 Audio jacks (and headphone jack) mount __from the bottom__
@@ -116,7 +118,7 @@ This ends up with about 6mm between the main board and the display carrier board
 
 ## TIP - Test voltage again
 
-You can attach the Pi without an SD card inside and test voltages on the board
+You can attach the Pi without an SD card inside and then test voltages on the board
 
 <img src="buildpix/voltage.png" alt="voltages" width="720" height="480" />
 
