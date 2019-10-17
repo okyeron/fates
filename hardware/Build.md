@@ -51,6 +51,9 @@ Do the little voltage regulator next and then check your work on all those tiny 
 
 ### Crystal
 Save the crystal for last of the smd stuff since it's big and gets in the way of soldering the smaller parts.
+
+There's no direction or polarity here. It can go on either way.
+
 <img src="buildpix/crystal.png" alt="crystal" width="720" height="480" />
 
 # Thru-hole
@@ -80,6 +83,8 @@ NOTE - if you use the CUI MJ-3536 jacks from Mouser, you may need to trim or fil
 ## Thru-hole capacitors
 
 These all attach from the bottom. Values are marked on the board. 
+
+NOTE - the caps have polarity. The long pin of the capacitor is the positive pin (+) (this is marked on the board as +). The negative pin (-) is marked on the capacitor as a stripe down the side.
 
 ## Headers
 
