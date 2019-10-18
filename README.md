@@ -34,6 +34,8 @@ Fates can be powered either from it's own USB-C power jack, or the Raspberry Pi 
 
 [Build Guide](hardware/Build.md)
 
+[Acrylic Case Assembly](hardware/AcrylicCase.md)
+
 
 
 ## Install instructions
