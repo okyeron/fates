@@ -11,19 +11,19 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 
 | Mouser  | QTY | Part | Value | Package |
 |-----|:--:|-----|-----|-----|
-|603-AC0805FR-07100RL|2|R5 R16|100R|0805|
+|603-AC0805FR-07100RL|2|R4 R5|100R|0805|
 |603-RC0805FR-07220RL|4|R16 R17 R18 R19|220R|0805|
-|603-RC0805FR-072K2L|2|R7 R8|2.2K|0805|
+|603-RC0805FR-072K2L|2|R14 R15|2.2K|0805|
 |603-RC0805FR-075K1L|2|R20 R21|5.1K|0805|
-|279-CRGCQ0805F5K6|4|R4 R20 R22 R26|5.6K|0805|
+|279-CRGCQ0805F5K6|4|R10 R11 R12 R13|5.6K|0805|
 |603-RC0805FR-0710KL|3|R1 R2 R3|10k|0805|
-|RC0805FR-0747KL|4|R6 R18 R32 R33|47K|0805|
+|RC0805FR-0747KL|4|R6 R7 R8 R9|47K|0805|
 |603-CC805JRNPO9BN180|2|C10 C11|18p|0805|
 |710-885012207082|2|C8 C9|220p|0805|
 |80-C0805C104J5RACLR|7|C1 C2 C3 C4 C5 C6 C7|100n|0805|
 |710-860020672005|4|C12 C13 C14 C15|1uF Electrolytic|11mm|
-|667-ECE-A1VKS100|3|C19 C20 C21|10uF Electrolytic|11mm|
-|667-ECA-0JM221B|2|C17 C18|220uF Electrolytic|11mm|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+|667-ECE-A1VKS100|3|C18 C19 C20|10uF Electrolytic|11mm|
+|667-ECA-0JM221B|2|C16 C17|220uF Electrolytic|11mm|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 |ADP150AUJZ-3.3-R7|1|ADP150-3.3|ADP150AUJZ-3.3-R7||
 |238-WM8731SEDS/RV|1|U1|WM8731SEDS/V|SSOP28||
 |815-ABLS2-12.2-D4Y-T|1|Y1|12.288MHz|HC49UP||
