@@ -1,7 +1,6 @@
 ## Fates Acrylic Case Kits
 
 
-
 ### Standoff guide
 
 <img src="buildpix/standoffs.jpg" alt="standoffs" width="690" height="459" />
