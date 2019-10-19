@@ -33,6 +33,8 @@ Use the `ADD` option to choose your network and enter your password, etc.
 
 ## Set your timezone, wifi-country and expand filesystem
 
+Open a terminal, SSH to the Pi and do
+
     sudo raspi-config
     
 first go to `Localization Options` menu item and select `Change Timezone`  
