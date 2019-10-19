@@ -37,7 +37,9 @@ Use the `ADD` option to choose your network and enter your password, etc.
     
 first go to `Localization Options` menu item and select `Change Timezone`  
 then repeat with `Change WiFi Country`  
-	
+
+*** this next bit is super important ***
+
 Then go to `Advanced Options` and select the first option to `Expand Filesystem`  
 	
 `Finish` and reboot (if not prompted).  
