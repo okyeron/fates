@@ -59,10 +59,10 @@ enable_uart=1
 dtoverlay=rpi-proto
 
 # Buttons and encoders
-dtoverlay=fates-buttons-encoders
+#dtoverlay=fates-buttons-encoders
 
 # Alternate overlay for 4 encoders
-#dtoverlay=fates-buttons-4encoders
+dtoverlay=fates-buttons-4encoders
 
 
 # Screen
