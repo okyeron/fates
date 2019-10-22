@@ -75,6 +75,8 @@ Once the USB-C jack is attached, check USB-C power input voltage levels. I sugge
 
 <img src="buildpix/voltage1.png" alt="voltages" width="720" height="480" />
 
+***Be sure you are using a good power supply. The Pi 3b+ needs a 5V 2.5A power supply. The Pi 4 requires a 5V 3A power supply. Buy one of the official Raspberry Pi power supplies if you're not sure.***
+
 ## Audio jacks
 
 Audio jacks (and headphone jack) mount __from the bottom__
