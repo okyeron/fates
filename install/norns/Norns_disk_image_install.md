@@ -30,6 +30,15 @@ Use the norns menu to navigate to `SYSTEM > WIFI` and add your WiFi network manu
 
 Use the `ADD` option to choose your network and enter your password, etc.
 
+## SSH to the pi
+
+Open a terminal, SSH to the Pi
+
+The default norns user is `we`
+
+The default password is `sleep`
+
+Thus to connect you will use `ssh we@norns.local` (or the IP address of the device) and enter `sleep`
 
 ## Set your timezone, wifi-country and expand filesystem
 
