@@ -1,6 +1,10 @@
 # Installing Linux and Norns on Fates (full install)
 ***For Fates v1.8 pcb or later***
 
+DO NOT USE THIS IF YOU HAVE DOWNLOADED ONE OF THE FATES DISK IMAGES
+
+This is a full "from scratch" install of everything.
+ 
 ## Preparing the Raspberry PI
 
 ### Download Raspbian Buster Lite (for pi3 or pi4) 
