@@ -63,7 +63,11 @@ Then go to `Advanced Options` and select the first option to `Expand Filesystem`
 	
 `Finish` and reboot (if not prompted).  
 
-After these changes, Norns may start up with `NONE` listed at the top of the screen. This is normal. Just go to SELECT > AWAKE to start the Awake script.
+After these changes, 2 things may happen:
+
+1. You get a `SUPERCOLLIDER FAIL` error at the top of the screen. In this case use the norns menu to SLEEP (which shuts the pi down) and then when the led stops flashing, unplug and plug in power once more to restart. At which point you should see option 2 below. 
+
+2. You see `NONE` listed at the top of the screen. This is normal. Just go to SELECT > AWAKE to start the Awake script.  
 
 
 ## Norns documentation
