@@ -6,6 +6,8 @@ Everything here depends on having a working norns setup. Please see that install
 
 NOTE - This thread on the lines forum is the best place to get information on running Orac on Fates.
 
+Installation information is in the Top Post:
+
 https://llllllll.co/t/orac-sidekick-and-pure-data-for-norns/26198
 
 ### Video:
