@@ -120,7 +120,7 @@ This ends up with about 6mm between the main board and the display carrier board
 
 ## TIP - Test voltage again
 
-You can attach the Pi without an SD card inside and then test voltages on the board
+You can attach the Pi and power it without an SD card inside and then test voltages on the board
 
 <img src="buildpix/voltage.png" alt="voltages" width="720" height="480" />
 
