@@ -26,7 +26,7 @@ Alternately you can connect to the pi over ethernet and then setup wifi with `ra
 
 Create an empty file named `ssh` (lowercase, and be sure there's no file extension)
 
-Next create a `wpa-supplicant.conf` file with your local wifi network settings. Change the country, router name, and key in the example below.
+Next create a `wpa_supplicant.conf` file with your local wifi network settings. Change the country, router name, and key in the example below.
 
     country=US #(your country)
     update_config=1
@@ -38,7 +38,7 @@ Next create a `wpa-supplicant.conf` file with your local wifi network settings. 
       key_mgmt=WPA-PSK
     }
 
-Then copy the **wpa-supplicant.conf** and **ssh** files you've created to the root of the ***boot*** volume on the SD card and then unmount the card.
+Then copy the **wpa_supplicant.conf** and **ssh** files you've created to the root of the ***boot*** volume on the SD card and then unmount the card.
 
 
 ### Put the SD card in the Raspberry Pi and boot
