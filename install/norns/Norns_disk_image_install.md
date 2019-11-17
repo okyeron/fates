@@ -38,6 +38,10 @@ Use the norns menu to navigate to `SYSTEM > WIFI` and add your WiFi network manu
 
 Use the `ADD` option to choose your network and enter your password, etc.
 
+## norns wifi hotspot
+
+Alternately you can setup the pi as a hotspot from the menu. Once you select that you need to connect to the hotspot network called `norns` with your computer. the password is `nnnnnnnn`
+
 ## SSH to the pi
 
 Open a terminal, SSH to the Pi
