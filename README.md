@@ -53,6 +53,21 @@ Fates can be powered either from it's own USB-C power jack, or the Raspberry Pi 
 
 - `SUPERCOLLIDER FAIL` error on boot: This happens because the Jack Audio system is not starting properly. A number of things can cause this. There is a information and support thread on the "lines" forum [here](https://llllllll.co/t/fates-a-diy-norns-dac-board-for-raspberry-pi/22999?u=okyeron)
 
+### Audio tests
+
+A low level test…  
+Firstst stop jack, so we can test the DAC directly with ALSA
+
+`sudo systemctl stop norns-jack.service`  
+
+Now use `aplay` to play a wave file.
+
+`aplay ~/dust/audio/common/wavs/01.wav`
+this should play a simple clean bell tone
+
+An alternate test is speaker-test
+`speaker-test -t wav -c 2`
+
 
 ## UART
 
