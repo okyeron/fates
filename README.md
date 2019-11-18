@@ -62,7 +62,7 @@ Firstst stop jack, so we can test the DAC directly with ALSA
 
 Now use `aplay` to play a wave file.
 
-`aplay ~/dust/audio/common/wavs/01.wav`
+`aplay ~/dust/audio/common/waves/01.wav`
 this should play a simple clean bell tone
 
 An alternate test is speaker-test
