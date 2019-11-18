@@ -70,6 +70,8 @@ An alternate test is speaker-test
 
 This will play a female voice saying "front right" and "front left" in each channel 3 times. 
 
+`sudo reboot` to get things back to normal. 
+
 ## UART
 
 Fates includes UART pins broken out for a serial connection to another computer using a UART-USB cable.
