@@ -66,8 +66,9 @@ Now use `aplay` to play a wave file.
 this should play a simple clean bell tone
 
 An alternate test is speaker-test
-`speaker-test -t wav -c 2`
+`speaker-test -t wav -c2 -l3`
 
+This will play a female voice saying "front right" and "front left" in each channel 3 times. 
 
 ## UART
 
