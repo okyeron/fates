@@ -49,6 +49,8 @@ Fates can be powered either from it's own USB-C power jack, or the Raspberry Pi 
 
 - Be sure you are using a good power supply. The Pi 3b+ needs a 5V 2.5A power supply. The Pi 4 requires a 5V 3A power supply. Buy one of the official Raspberry Pi power supplies if you're not sure.
 
+- DO NOT TRY TO POWER FATES FROM YOUR LAPTOP USB-C Ports. Use a dedicated 3A power supply.  
+
 - [Check your input voltages](hardware/Build.md#tip---test-voltage)
 
 - `SUPERCOLLIDER FAIL` error on boot: This happens because the Jack Audio system is not starting properly. A number of things can cause this. There is a information and support thread on the "lines" forum [here](https://llllllll.co/t/fates-a-diy-norns-dac-board-for-raspberry-pi/22999?u=okyeron)
