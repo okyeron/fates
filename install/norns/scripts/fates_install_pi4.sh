@@ -7,7 +7,7 @@ mkdir ~/.local/share/
 mkdir ~/.local/share/SuperCollider
 mkdir ~/.local/share/SuperCollider/Extensions
 
-echo '190801' >> version.txt
+echo '191028' >> version.txt
 mkdir ~/update
 mkdir ~/dust
 mkdir ~/dust/data
@@ -25,7 +25,6 @@ sudo cp -f /home/we/fates/install/norns/files/asound.conf /etc
 sudo cp -f /home/we/fates/install/norns/files/alsa.conf /usr/share/alsa
 sudo cp -f /home/we/fates/install/norns/files/alsa-base.conf /etc/modprobe.d/alsa-base.conf
 sudo cp -f /home/we/fates/install/norns/files/rc.local /etc/rc.local
-
 
 # compile the overlays (buttons and encoders + ssd1322)
 sudo dtc -W no-unit_address_vs_reg -@ -I dts -O dtb -o /boot/overlays/fates-buttons-encoders.dtbo /home/we/fates/overlays/fates1.7-buttons-encoders-overlay.dts
@@ -66,9 +65,9 @@ tar -xvf common_audio.tar
 rm common_audio.tar
 
 cd ~
-wget https://github.com/monome/maiden/releases/download/v0.13/maiden-v0.13.tgz
-tar -xvf maiden-v0.13.tgz
-rm maiden-v0.13.tgz
+wget https://github.com/monome/maiden/releases/download/v1.0/maiden-v1.0.tgz
+tar -xvf maiden-v1.0.tgz
+rm maiden-v1.0.tgz
 
 #sudo apt install network-manager
 #sudo cp ~/norns-linux-bits/interfaces /etc/network/interfaces
