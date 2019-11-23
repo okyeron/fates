@@ -57,6 +57,8 @@ Fates can be powered either from it's own USB-C power jack, or the Raspberry Pi 
 
 ### Audio tests
 
+SSH to the pi to conduct these tests. Have your audio outputs and inputs connected to speakers/mixer and a sound source.  
+
 A low level test…  
 Firstst stop jack, so we can test the DAC directly with ALSA
 
@@ -67,10 +69,16 @@ Now use `aplay` to play a wave file.
 `aplay ~/dust/audio/common/waves/01.wav`
 this should play a simple clean bell tone
 
-An alternate test is speaker-test
-`speaker-test -t wav -c2 -l3`
+An alternate test is speaker-test  
+`speaker-test -t wav -c 2 -l 3 -D hw:0,0`
 
 This will play a female voice saying "front right" and "front left" in each channel 3 times. 
+
+Record audio from the inputs  
+`arecord -f dat -vv -V stereo -d 15 ~/audio-test.wav`
+
+Play back the same audio file  
+`aplay -vv -V stereo ~/audio-test.wav`
 
 `sudo reboot` to get things back to normal. 
 
