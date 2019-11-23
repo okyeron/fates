@@ -74,7 +74,7 @@ An alternate test is speaker-test
 
 This will play a female voice saying "front right" and "front left" in each channel 3 times. 
 
-Record audio from the inputs  
+Record 15 seconds of audio from the inputs and save to a .wav file 
 `arecord -f dat -vv -V stereo -d 15 ~/audio-test.wav`
 
 Play back the same audio file  
