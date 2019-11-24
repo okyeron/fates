@@ -74,7 +74,7 @@ Be aware of the routing on the USB Jack pins. Some pins are tied together, so do
 
 ## TIP - Test voltage
 
-Once the USB-C jack is attached, check USB-C power input voltage levels. I suggest doing this __before__ you attach the pi. There's a 5v/GND header pin holes right near the voltage regulator which is great for testing voltage (+5v).
+Once the USB-C jack is attached, check that you don't have continuity between 5v and GND and then plug power into the jack and check the USB-C power input voltage level. I suggest doing this __before__ you attach the pi. There's a 5v/GND header pin holes right near the voltage regulator which is great for testing voltage (+5v).
 
 <img src="buildpix/voltage1.png" alt="voltages" width="720" height="480" />
 
