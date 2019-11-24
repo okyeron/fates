@@ -17,7 +17,6 @@ Do the little voltage regulator next and then check your work on all those tiny 
 <img src="buildpix/vreg.png" alt="vreg" width="720" height="480" />
 
 
-
 ### 100n capacitors  
 <img src="buildpix/100n.png" alt="100n capacitors" width="720" height="480" />
 
@@ -58,11 +57,15 @@ There's no direction or polarity here. It can go on either way.
 
 # Thru-hole
 
-I have been doing the thru-hole stuff in the following order: USB jack, audio jacks, headphone jack, capacitors, pin headers (2x20 first, then flip over for the 1x20), switches, and encoders last. Then do the headers on the display.
+I have been doing the thru-hole stuff in the following order: USB jack, audio jacks, headphone jack, pin headers (2x20 first, then flip over for the 1x20), switches, capacitors, and encoders last. Then do the headers on the display.
 
 ## USB-C Jack 
 
-The pins here are quite small and close together. Use flux!
+The pins here are quite small and close together. 
+
+**Be extra careful inserting the jack onto the pcb.** I've bent the little pins more than once. **Before you solder** - check from the top with a loupe/magnifier to be sure each hole has a pin in it.
+
+Solder each pin and then hit the area with some flux and touch each point again.
 
 Be aware of the routing on the USB Jack pins. Some pins are tied together, so don't be alarmed if your soldering looks bridged on the diagonals.  
 
