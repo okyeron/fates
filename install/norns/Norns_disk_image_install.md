@@ -13,14 +13,16 @@ For Raspberry Pi 3b+ (190930 norns 2.2.0)
 [torrent link](https://archive.org/download/fates-pi3b-20191004/fates-pi3b-20191004_archive.torrent)  
 
 
+For Raspberry Pi 4b (191201 norns 2.2.4)  
+[img file](https://archive.org/download/fates-pi4b-20191201/fates-pi4b-20191201.img) (2.2GB)  
+[torrent link](https://archive.org/download/fates-pi4b-20191201/fates-pi4b-20191201_archive.torrent)  
+
+
 For Raspberry Pi 4b (191016 norns 2.2.1)  
 [img file](https://archive.org/download/fates-pi4b-20191024/fates-pi4b-20191024.img) (2.2GB)  
 [torrent link](https://archive.org/download/fates-pi4b-20191024/fates-pi4b-20191024_archive.torrent)  
 
 
-For Raspberry Pi 4b (190930 norns 2.2.0)  
-[img file](https://archive.org/download/fates-pi4b-20191004/fates-pi4b-20191004.img) (2.2GB)  
-[torrent link](https://archive.org/download/fates-pi4b-20191004/fates-pi4b-20191004_archive.torrent)  
 
 
 
