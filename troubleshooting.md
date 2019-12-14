@@ -38,9 +38,10 @@ Play back the same audio file
 
 ### SLEEP
 
-> when i go to SYSTEM - SLEEP. Fates didn’t go off, it stays on with the ‘sleep.’ dim light, just hang in there. any idea why this is happen?
+> when i go to SYSTEM - SLEEP. Fates didn’t go off, it stays on with ‘sleep’ dimmed on screen.
 
 This is "normal" behavior. SLEEP is actually invoking the `sudo shutdown now` command, so the pi will shut off with this command. However, power is still going to the pi (red led will be lit) and to the display. Thus the display will continue to show the last thing on screen.
 
 When you use SLEEP - Make sure you have a solid red indicator light on the pi (no flashing green) and then disconnect from power.
 
+An inline usb power switch (like one from [CanaKit](https://www.canakit.com/raspberry-pi-4-on-off-power-switch.html)) is very handy to switch power off after shutdown.
