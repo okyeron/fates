@@ -38,7 +38,7 @@ Play back the same audio file
 
 ### SLEEP
 
-> when i go to SYSTEM - SLEEP. Fates didn’t go off, it stays on with ‘sleep’ dimmed on screen.
+> when i go to SYSTEM - SLEEP. Fates does not turn off, it stays on with ‘sleep’ dimmed on screen.
 
 This is "normal" behavior. SLEEP is actually invoking the `sudo shutdown now` command, so the pi will shut off with this command. However, power is still going to the pi (red led will be lit) and to the display. Thus the display will continue to show the last thing on screen.
 
