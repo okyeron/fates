@@ -45,3 +45,15 @@ This is "normal" behavior. SLEEP is actually invoking the `sudo shutdown now` co
 When you use SLEEP - Make sure you have a solid red indicator light on the pi (no flashing green) and then disconnect from power.
 
 An inline usb power switch (like one from [CanaKit](https://www.canakit.com/raspberry-pi-4-on-off-power-switch.html)) is very handy to switch power off after shutdown.
+
+### Wake from SLEEP
+
+The norns docs mention this:
+
+> Hold K1 for three seconds. Be still, and norns will awaken.
+
+This is a norns hardware only feature and will not work on Fates.
+
+To turn Fates on, just plug into power (or use a switch as mentioned above)
+
+Note - as with norns hardware - __For general shut down use the sleep menu function. This fully turns off the device with a proper software shutdown. __
