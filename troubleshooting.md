@@ -56,4 +56,4 @@ This is a norns hardware only feature and will not work on Fates.
 
 To turn Fates on, just plug into power (or use a switch as mentioned above)
 
-Note - as with norns hardware - *For general shut down use the sleep menu function. This fully turns off the device with a proper software shutdown.*
+Note - as with norns hardware - **For general shut down use the sleep menu function. This fully turns off the device with a proper software shutdown.**
