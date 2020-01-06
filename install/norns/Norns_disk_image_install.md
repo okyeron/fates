@@ -1,3 +1,10 @@
+# Important 
+As of 12-30-2019 ***DO NOT*** run the on device SYSTEM > UPDATE from the norns menu. 
+
+You will need to update manually. More information soon.
+
+
+
 # Installing from disk image
 ***For Fates v1.8 pcb or later***
 

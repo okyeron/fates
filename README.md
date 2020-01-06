@@ -1,3 +1,8 @@
+# Important 
+As of 12-30-2019 ***DO NOT*** run the on device SYSTEM > UPDATE from the norns menu. 
+
+You will need to update manually. More information soon.
+
 # Fates DAC board for Raspberry Pi
 
 Fates is an audio and UI platform for Raspberry Pi 3 Model B+ and Pi 4 Model B that provides a stereo audio codec with headphone driver, 3 (or 4) encoders, 3 buttons, a 128x64 OLED display, 2x audio ins, and 2x audio outs. 
