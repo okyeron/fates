@@ -1,0 +1,54 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          samba
+# Required-Start:
+# Required-Stop:
+# Default-Start:
+# Default-Stop:
+# Short-Description: ensure Samba daemons are started (nmbd, smbd and samba)
+# Description: Starts Samba, a Windows AD and SMB/CIFS fileserver for UNIX
+### END INIT INFO
+
+set -e
+
+# start nmbd, smbd and samba-ad-dc unconditionally
+# the init scripts themselves check if they are needed or not
+case $1 in
+	start)
+		/etc/init.d/nmbd start
+		/etc/init.d/smbd start
+		/etc/init.d/samba-ad-dc start
+		;;
+	stop)
+		/etc/init.d/samba-ad-dc stop
+		/etc/init.d/smbd stop
+		/etc/init.d/nmbd stop
+		;;
+	reload)
+		/etc/init.d/smbd reload
+		;;
+	restart|force-reload)
+		/etc/init.d/nmbd "$1"
+		/etc/init.d/smbd "$1"
+		/etc/init.d/samba-ad-dc "$1"
+		;;
+	status)
+		status=0
+		NMBD_DISABLED=`testparm -s --parameter-name='disable netbios' 2>/dev/null || true`
+		SERVER_ROLE=`samba-tool testparm --parameter-name="server role"  2>/dev/null | tail -1 || true`
+		if [ "$SERVER_ROLE" != "active directory domain controller" ]; then
+			if [ "$NMBD_DISABLED" != "Yes" ]; then
+				/etc/init.d/nmbd status || status=$?
+			fi
+			/etc/init.d/smbd status || status=$?
+		else
+			/etc/init.d/samba-ad-dc status || status=$?
+		fi
+		exit $status
+		;;
+	*)
+		echo "Usage: /etc/init.d/samba {start|stop|reload|restart|force-reload|status}"
+		exit 1
+		;;
+esac
