@@ -11,23 +11,15 @@ You will need to update manually. More information soon.
 
 ### Download Fates disk image (for pi3 or pi4) 
 
-For Raspberry Pi 3b+ (191230 norns 2.2.5)  
+For Raspberry Pi 3b+ (191230 norns 2.2.6)  
 [img file](https://archive.org/download/fates-pi3b-20200106/fates-pi3b-20200106.img)  (2.2GB)  
 [torrent link](https://archive.org/download/fates-pi3b-20200106/fates-pi3b-20200106_archive.torrent)  
 
 
 
-For Raspberry Pi 4b (191201 norns 2.2.4)  
-[img file](https://archive.org/download/fates-pi4b-20191201/fates-pi4b-20191201.img) (2.2GB)  
-[torrent link](https://archive.org/download/fates-pi4b-20191201/fates-pi4b-20191201_archive.torrent)  
-
-NOTE - I have had some problems trying to get this 191201 image to properly "expand filesystem" after flashing with Etcher. If you run into this, it may require downloading the older image (below) and then updating the norns software on device.
-
-
-For Raspberry Pi 4b (191016 norns 2.2.1)  
-[img file](https://archive.org/download/fates-pi4b-20191024/fates-pi4b-20191024.img) (2.2GB)  
-[torrent link](https://archive.org/download/fates-pi4b-20191024/fates-pi4b-20191024_archive.torrent)  
-
+For Raspberry Pi 4b (191201 norns 2.2.6)  
+[img file](https://archive.org/download/fates-pi4b-20200106/fates-pi4b-20200106.img) (2.2GB)  
+[torrent link](https://archive.org/download/fates-pi4b-20200106/fates-pi4b-20200106_archive.torrent)  
 
 
 
