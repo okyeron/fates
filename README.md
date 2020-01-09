@@ -1,7 +1,7 @@
-# Important 
+# Important - regarding norns software updates
 As of 12-30-2019 ***DO NOT*** run the on device SYSTEM > UPDATE from the norns menu. 
 
-You will need to update manually. More information soon.
+You will need to update manually. [See here](https://github.com/okyeron/fates/releases/tag/v2.2.6)
 
 # Fates DAC board for Raspberry Pi
 
