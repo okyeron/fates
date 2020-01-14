@@ -17,7 +17,7 @@ For Raspberry Pi 3b+ (191230 norns 2.2.6)
 
 
 
-For Raspberry Pi 4b (191201 norns 2.2.6)  
+For Raspberry Pi 4b (191230 norns 2.2.6)  
 [img file](https://archive.org/download/fates-pi4b-20200106/fates-pi4b-20200106.img) (2.2GB)  
 [torrent link](https://archive.org/download/fates-pi4b-20200106/fates-pi4b-20200106_archive.torrent)  
 
