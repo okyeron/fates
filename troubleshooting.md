@@ -1,7 +1,13 @@
 # Fates - Troubleshooting
 
+### Etcher doesn't work for me
+
+You can also try [ApplePiBaker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) if you're on MacOS. Otherwise you may be looking at various arcane `dd` commands.
+
 ### Power
 - Be sure you are using a good power supply. The Pi 3b+ needs a 5V 2.5A power supply. The Pi 4 requires a 5V 3A power supply. Buy one of the official Raspberry Pi power supplies if you're not sure.
+
+- Be sure you're using a good quality USB-C cable (and it's not just a "charging" cable)
 
 - DO NOT TRY TO POWER FATES FROM YOUR LAPTOP USB-C Ports. Use a dedicated 3A power supply.  
 
@@ -11,7 +17,7 @@
 
 ### Audio tests
 
-SSH to the pi to conduct these tests. Have your audio outputs and inputs connected to speakers/mixer and a sound source.  
+SSH to the pi/fates to conduct these tests. Have your audio outputs and inputs connected to speakers/mixer and a sound source.  
 
 A low level test…  
 Firstst stop jack, so we can test the DAC directly with ALSA
@@ -36,24 +42,9 @@ Play back the same audio file
 
 `sudo reboot` to get things back to normal. 
 
-### SLEEP
 
-> when i go to SYSTEM - SLEEP. Fates does not turn off, it stays on with ‘sleep’ dimmed on screen.
+###[Raspberry Pi LED status messages](https://elinux.org/R-Pi_Troubleshooting#Red_power_LED_is_on.2C_green_LED_does_not_flash.2C_nothing_on_display)
 
-This is "normal" behavior. SLEEP is actually invoking the `sudo shutdown now` command, so the pi will shut off with this command. However, power is still going to the pi (red led will be lit) and to the display. Thus the display will continue to show the last thing on screen.
+### FAQ
 
-When you use SLEEP - Make sure you have a solid red indicator light on the pi (no flashing green) and then disconnect from power.
-
-An inline usb power switch (like one from [CanaKit](https://www.canakit.com/raspberry-pi-4-on-off-power-switch.html)) is very handy to switch power off after shutdown.
-
-### Wake from SLEEP
-
-The norns docs mention this:
-
-> Hold K1 for three seconds. Be still, and norns will awaken.
-
-This is a norns hardware only feature and will not work on Fates.
-
-To turn Fates on, just plug into power (or use a switch as mentioned above)
-
-Note - as with norns hardware - **For general shut down use the SLEEP menu function. This fully turns off the device with a proper software shutdown.**
+See [Frequently Asked Questions](FAQ.md) for other general info
