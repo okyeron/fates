@@ -26,5 +26,5 @@ Note - as with norns hardware - **For general shut down use the SLEEP menu funct
 
 As of 12-30-2019 ***DO NOT*** run the on device SYSTEM > UPDATE from the norns menu. 
 
-You will need to update manually. See [here for update info](https://github.com/okyeron/fates/releases/tag/v2.2.6)
+You will need to update manually. See [here for update info](https://github.com/okyeron/fates/releases)
 
