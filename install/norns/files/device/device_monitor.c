@@ -270,7 +270,7 @@ device_t check_dev_type(struct udev_device *dev) {
 
             // if TTY check product info
             if (strcmp(subsys, "tty") == 0) {
-				if (strcmp(device_product, "monome") == 0 && strcmp(device_vendor, "monome") == 0) {
+				if (strcmp(device_vendor, "monome") == 0) {
 					t = DEV_TYPE_MONOME;
 				} else if (strcmp(device_product, "crow:_telephone_line") == 0 && strcmp(device_vendor, "monome___whimsical_raps") == 0){
 					t = DEV_TYPE_CROW;
