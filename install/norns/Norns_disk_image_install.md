@@ -11,15 +11,14 @@ You will need to update manually. See [here for update info](https://github.com/
 
 ### Download Fates disk image (for pi3 or pi4) 
 
-For Raspberry Pi 3b+ (191230 norns 2.2.6)  
-[img file](https://archive.org/download/fates-pi3b-20200106/fates-pi3b-20200106.img)  (2.2GB)  
-[torrent link](https://archive.org/download/fates-pi3b-20200106/fates-pi3b-20200106_archive.torrent)  
+For Raspberry Pi 3b+ (200218 norns 2.2.9)  
+[img file](https://archive.org/download/fates-pi4b-20200218/fates-pi3b-20200218.img)  (2.2GB)  
 
 
 
-For Raspberry Pi 4b (191230 norns 2.2.6)  
-[img file](https://archive.org/download/fates-pi4b-20200106/fates-pi4b-20200106.img) (2.2GB)  
-[torrent link](https://archive.org/download/fates-pi4b-20200106/fates-pi4b-20200106_archive.torrent)  
+For Raspberry Pi 4b (200218 norns 2.2.9)  
+[img file](https://archive.org/download/fates-pi4b-20200218/fates-pi4b-20200218.img) (2.2GB)  
+
 
 
 
