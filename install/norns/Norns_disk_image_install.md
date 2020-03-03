@@ -51,7 +51,29 @@ The default password is `sleep`
 
 Thus to connect you will use `ssh we@norns.local` (or the IP address of the device) and enter `sleep`
 
-## Set your timezone, wifi-country and expand filesystem
+## Expand filesystem
+
+*** this is super important ***
+
+Open a terminal, SSH to the Pi and do
+
+    sudo raspi-config
+
+Then go to `Advanced Options` and select the first option to `Expand Filesystem`.
+
+Then do `Finish` and reboot.
+
+If this errors and says the filesystem can't be resized, try the following from the command line:
+
+
+    sudo raspi-config --expand-rootfs
+    sudo resize2fs /dev/mmcblk0p2
+
+Then reboot.
+
+NOTE - Ignore the warning to reboot after the `--expand-rootfs` command. The resize2fs will take a minute or two to run. Wait for it.
+
+## Set your timezone, wifi-country
 
 Open a terminal, SSH to the Pi and do
 
@@ -59,10 +81,6 @@ Open a terminal, SSH to the Pi and do
     
 first go to `Localization Options` menu item and select `Change Timezone`  
 then repeat with `Change WiFi Country`  
-
-*** this next bit is super important ***
-
-Then go to `Advanced Options` and select the first option to `Expand Filesystem`  
 	
 `Finish` and reboot (if not prompted).  
 
