@@ -37,13 +37,16 @@ cd /home/we/norns-image
 cd /home/we
 git clone https://github.com/monome/norns.git
 cd /home/we/norns
+git submodule update --recursive --init 
+
 sudo cp -f /home/we/fates/install/norns/files/crone/wscript /home/we/norns/crone/wscript
 
 # we need to run sclang
 echo | sclang
 
-./waf configure
-./waf
+./waf clean
+./waf configure --enable-ableton-link
+./waf build
 
 cd /home/we/norns/sc && ./install.sh
 
@@ -61,9 +64,9 @@ tar -xvf common_audio.tar
 rm common_audio.tar
 
 cd ~
-wget https://github.com/monome/maiden/releases/download/v1.0/maiden-v1.0.tgz
-tar -xvf maiden-v1.0.tgz
-rm maiden-v1.0.tgz
+wget https://github.com/monome/maiden/releases/download/v1.0.1/maiden-v1.0.1.tgz
+tar -xvf maiden-v1.0.1.tgz
+rm maiden-v1.0.1.tgz
 
 #sudo apt install network-manager
 #sudo cp ~/norns-linux-bits/interfaces /etc/network/interfaces

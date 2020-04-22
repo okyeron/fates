@@ -7,7 +7,7 @@ mkdir ~/.local/share/
 mkdir ~/.local/share/SuperCollider
 mkdir ~/.local/share/SuperCollider/Extensions
 
-echo '191028' >> version.txt
+echo '200328' >> version.txt
 mkdir ~/update
 mkdir ~/dust
 mkdir ~/dust/data
@@ -37,13 +37,16 @@ cd /home/we/norns-image
 cd /home/we
 git clone https://github.com/monome/norns.git
 cd /home/we/norns
+git submodule update --recursive --init 
+
 sudo cp -f /home/we/fates/install/norns/files/crone/wscript /home/we/norns/crone/wscript
 
 # we need to run sclang
 echo | sclang
 
-./waf configure
-./waf
+./waf clean
+./waf configure --enable-ableton-link
+./waf build
 
 cd /home/we/norns/sc && ./install.sh
 
@@ -65,14 +68,36 @@ tar -xvf common_audio.tar
 rm common_audio.tar
 
 cd ~
-wget https://github.com/monome/maiden/releases/download/v1.0/maiden-v1.0.tgz
-tar -xvf maiden-v1.0.tgz
-rm maiden-v1.0.tgz
+wget https://github.com/monome/maiden/releases/download/v1.0.1/maiden-v1.0.1.tgz
+tar -xvf maiden-v1.0.1.tgz
+rm maiden-v1.0.1.tgz
 
 #sudo apt install network-manager
 #sudo cp ~/norns-linux-bits/interfaces /etc/network/interfaces
 #sudo mv /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant_bak.conf
 
 sudo systemctl disable serialosc.service
+
+# webdav
+#cp -a webdav /home/we/
+#sudo cp webdav/webdav.service /etc/systemd/system/
+#sudo systemctl enable webdav.service
+if [ -d /home/we/webdav ]; then
+  sudo rm -rf /home/we/webdav
+  sudo systemctl disable webdav.service
+  sudo rm /etc/systemd/system/webdav.service
+fi
+
+# samba - alternate install
+cd ~/fates
+git pull
+if [ "$SAMBA" == "" ]; then
+	sudo apt-get update
+	sudo apt-get install samba samba-common-bin
+	(echo "sleep"; echo "sleep") | sudo smbpasswd -s -a we
+fi
+sudo cp ~/fates/install/norns/files/smb.conf /etc/samba/
+sudo cp ~/fates/install/norns/files/samba /etc/init.d/
+sudo /etc/init.d/samba restart
 
 sudo reboot
