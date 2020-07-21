@@ -1,8 +1,9 @@
-# Important 
-As of 12-30-2019 ***DO NOT*** run the on device SYSTEM > UPDATE from the norns menu. 
+# Important - Updates
+If you are running the norns software prior to 200218 ***DO NOT*** run the on device SYSTEM > UPDATE from the norns menu. 
 
-You will need to update manually. See [here for update info](https://github.com/okyeron/fates/releases)
+You will need to update manually. See [here for update info](https://github.com/fates-project/norns/releases/)
 
+If you have 200218 or later, the norns menu option for SYSTEM > UPDATE should work normally.
 
 
 # Installing from disk image
@@ -90,6 +91,9 @@ After these changes, 2 things may happen:
 
 2. You see `NONE` listed at the top of the screen. This is normal. Just go to SELECT > AWAKE to start the Awake script.  
 
+## Update
+
+Run SYSTEM > UPDATE on device to update to the current release
 
 ## Norns documentation
 
