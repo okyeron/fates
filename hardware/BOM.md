@@ -9,6 +9,8 @@ Mouser also now carries Pis (although a bit more expensive) if you want one-stop
 
 ENC4 is optional and is not functional for norns right now. If you want to use Orac later, get 4 encoders.
 
+Note - some Mouser part numbers may be out of stock (usually passives), so you may need to search for equivalent alternatives
+
 | Mouser  | QTY | Part | Value | Package |
 |-----|:--:|-----|-----|-----|
 |603-AC0805FR-07100RL|2|R4 R5|100R|0805|
@@ -23,7 +25,7 @@ ENC4 is optional and is not functional for norns right now. If you want to use O
 |80-C0805C104J5RACLR|7|C1 C2 C3 C4 C5 C6 C7|100n|0805|
 |710-860020672005|4|C12 C13 C14 C15|1uF Electrolytic|11mm|
 |667-ECE-A1VKS100|3|C18 C19 C20|10uF Electrolytic|11mm|
-|667-ECA-0JM221B|2|C16 C17|220uF Electrolytic|11mm|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+|80-ESH227M016AE3AA|2|C16 C17|220uF Electrolytic|11mm|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 |ADP150AUJZ-3.3-R7|1|ADP150-3.3|ADP150AUJZ-3.3-R7||
 |238-WM8731SEDS/RV|1|U1|WM8731SEDS/V|SSOP28||
 |815-ABLS2-12.2-D4Y-T|1|Y1|12.288MHz|HC49UP||
