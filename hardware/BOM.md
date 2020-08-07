@@ -54,6 +54,8 @@ Note - some Mouser part numbers may be out of stock (usually passives), so you m
 |[RPI4-MODBP-4GB-BULK](http://www.mouser.com/Search/ProductDetail.aspx?R=RPI4-MODBP-4GB-BULK)|0| |RPI4 b 4GB||
 ||1| |RPI Power supply - 3A USB-C recommended||
 
+If out of stock at Mouser/Digikey, the OLED display can also be purchased [directly from the manufacturer here](https://www.newhavendisplay.com/nhd2712864wdw3-p-9547.html).
+
 You might need to adjust order quantities, get knurled encoders, or get clicky buttons instead of quiet. So be sure to check part numbers and availability before ordering. NOTE - some parts may be out of stock. See the alternates listed above for other choices.
 
 \** The USB-C jack can be considered optional. You can power everything directly from the Raspberry Pi's own power input OR the Fates USB-C jack (DO NOT TRY TO POWER BOTH!)
