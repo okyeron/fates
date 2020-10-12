@@ -13,7 +13,12 @@ You can also try [ApplePiBaker](https://www.tweaking4all.com/hardware/raspberry-
 
 - [Check your input voltages](hardware/Build.md#tip---test-voltage)
 
-- `SUPERCOLLIDER FAIL` error on boot: This happens because the Jack Audio system is not starting properly. A number of things can cause this. There is a information and support thread on the "lines" forum [here](https://llllllll.co/t/fates-a-diy-norns-dac-board-for-raspberry-pi/22999?u=okyeron)
+### `SUPERCOLLIDER FAIL` error on boot:
+- This happens because the Jack Audio system is not starting properly. A number of things can cause this. There is a information and support thread on the "lines" forum [here](https://llllllll.co/t/fates-a-diy-norns-dac-board-for-raspberry-pi/22999?u=okyeron)
+
+- Check the orientation of the 2.2K resistors. They should be horizontal, not vertical.
+
+- Check the 3.3v voltage regulator. This powers the DAC so if it's not right, the DAC won't initialize. See the "check your voltages" link above to test.
 
 ### Audio tests
 
