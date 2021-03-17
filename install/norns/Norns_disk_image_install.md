@@ -21,6 +21,9 @@ For Raspberry Pi 4b (200218 norns 2.2.9)
 [img file](https://archive.org/download/fates-pi4b-20200218/fates-pi4b-20200218.img) (2.2GB)  
 
 
+For Raspberry Pi 4b rev 1.2 
+[img file](https://archive.org/download/fates-pi4b-5.4-20210120/fates-pi4b-5.4-20210120.img) (3.4GB)  
+
 
 
 
