@@ -1,9 +1,12 @@
 [Unit]
+After=norns-jack.service
+Requires=norns-jack.service
 
 [Service]
 Type=simple
 User=we
 Group=we
 ExecStart=/bin/bash -c '/home/we/norns/build/ws-wrapper/ws-wrapper ws://*:5555 /home/we/norns/build/matron/matron -f$$([[ -e /dev/fb1 ]] && echo "/dev/fb1" || echo "/dev/fb0")'
+
 [Install]
 WantedBy=norns.target
