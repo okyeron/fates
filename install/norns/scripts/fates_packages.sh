@@ -14,7 +14,7 @@ gpg --export --armor DD9300F1 | sudo apt-key add -
 echo "deb http://ppa.launchpad.net/artfwo/monome/ubuntu bionic main" | sudo tee /etc/apt/sources.list.d/monome.list
 
 echo Updating package list...
-sudo apt-get update
+sudo apt-get --allow-releaseinfo-change update
 
 sudo apt update -y
 
