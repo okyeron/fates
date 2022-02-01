@@ -1,4 +1,6 @@
 [Unit]
+After=norns-jack.service
+Requires=norns-jack.service
 
 [Service]
 Type=simple
