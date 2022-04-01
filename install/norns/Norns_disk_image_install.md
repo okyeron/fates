@@ -1,10 +1,7 @@
 # Important - Updates
-If you are running the norns software prior to 200218 ***DO NOT*** run the on device SYSTEM > UPDATE from the norns menu. 
+If you are running the norns software prior to 200218 ***DO NOT*** run the on device SYSTEM > UPDATE from the norns menu.  Back up your work and flash with the new disk images below.
 
-You will need to update manually. See [here for update info](https://github.com/fates-project/norns/releases/)
-
-If you have 200218 or later, the norns menu option for SYSTEM > UPDATE should work normally.
-
+Starting with Norns Update 220306 or 220321 - A new disk image is required.
 
 # Installing from disk image
 ***For Fates v1.8 pcb or later***
@@ -12,17 +9,13 @@ If you have 200218 or later, the norns menu option for SYSTEM > UPDATE should wo
 
 ### Download Fates disk image (for pi3 or pi4) 
 
-For Raspberry Pi 3b+ (200218 norns 2.2.9)  
-[img file](https://archive.org/download/fates-pi4b-20200218/fates-pi3b-20200218.img)  (2.2GB)  
+For Raspberry Pi 3b+ 
+[img file](https://archive.org/details/fates-pi3b-20220328.img)  (2.9GB)  
 
 
 
-For Raspberry Pi 4b (200218 norns 2.2.9)  
-[img file](https://archive.org/download/fates-pi4b-20200218/fates-pi4b-20200218.img) (2.2GB)  
-
-
-For Raspberry Pi 4b rev 1.2 
-[img file](https://archive.org/download/fates-pi4b-5.4-20210120/fates-pi4b-5.4-20210120.img) (3.4GB)  
+For Raspberry Pi 4b 
+[img file](https://archive.org/details/fates-pi4b-20220328.img) (2.6GB)  
 
 
 
@@ -53,7 +46,7 @@ The default norns user is `we`
 
 The default password is `sleep`
 
-Thus to connect you will use `ssh we@norns.local` (or the IP address of the device) and enter `sleep`
+Thus to connect you will use `ssh we@fates.local` (or the IP address of the device) and enter `sleep`
 
 ## Expand filesystem
 
