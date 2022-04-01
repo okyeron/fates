@@ -1,7 +1,7 @@
 # Important - regarding norns software updates
 If you are on a version of norns before 200218 ***DO NOT*** run the on device SYSTEM > UPDATE from the norns menu. 
 
-You will need to update manually. [See here](https://github.com/fates-project/norns/releases)
+If you're still on an old version like this - back up your scripts and install from a new (2022) disk image.
 
 # Fates DAC board for Raspberry Pi
 
@@ -45,10 +45,8 @@ Fates can be powered either from it's own USB-C power jack, or the Raspberry Pi 
 
 ## Install instructions
 
-- [Installing Fates 1.8+ from disk image](https://github.com/okyeron/fates/blob/master/install/norns/Norns_disk_image_install.md) **(recommended)**  
+- [Installing Fates 1.8+ from disk image](https://github.com/okyeron/fates/blob/master/install/norns/Norns_disk_image_install.md) 
 
-
-- [Installing Orac](https://github.com/okyeron/fates/blob/master/install/orac/README.md) (BETA)
 
 ## Troubleshooting
 
