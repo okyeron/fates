@@ -1,0 +1,10 @@
+[Unit]
+Description=ttyMIDI daemon
+After=sound.target
+
+[Service]
+ExecStart=/usr/bin/ttymidi -s /dev/ttyAMA0 -b 38400 -n Fates
+EnvironmentFile=/etc/environment
+
+[Install]
+WantedBy=multi-user.target
